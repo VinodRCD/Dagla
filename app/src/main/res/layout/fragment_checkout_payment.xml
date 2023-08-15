@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutPaymentActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/lblAddressTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delivery_address"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:textSize="16sp"
+                    android:textColor="#222222" />
+
+                <TextView
+                    android:id="@+id/lblAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="13sp"
+                    android:textColor="#4A4A4A"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/avenir_next_medium"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#E3E3E5"
+                android:layout_marginBottom="0dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="0dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/lblOrderSummaryTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_summary"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:textSize="16sp"
+                    android:textColor="#222222" />
+
+                <!--<ListView-->
+                    <!--android:id="@+id/lvOrderSummary"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:divider="#E3E3E5"-->
+                    <!--android:dividerHeight="0.5dp"-->
+                    <!--android:listSelector="@android:color/transparent"-->
+                    <!--android:scrollbars="none" />-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="blocksDescendants"
+                    android:layout_marginTop="10dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/lvOrderSummary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:layout_marginTop="0dp"/>
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#E3E3E5"
+                android:layout_marginBottom="0dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/lblCouponCodeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coupon_code"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:textSize="16sp"
+                    android:textColor="#222222" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <EditText
+                        android:id="@+id/txtCoupon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/btnRedeem"
+                        android:hint="@string/enter_coupon_code_here"
+                        android:textStyle="normal"
+                        android:fontFamily="@font/avenir_next_medium"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        style="@style/btnRedeem"
+                        android:id="@+id/btnRedeem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/redeem"
+                        android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#E3E3E5"
+                android:layout_marginBottom="0dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/lblPaymentSummaryTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/payment_summary"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:textSize="16sp"
+                    android:textColor="#222222" />
+
+                <!--<ListView-->
+                    <!--android:id="@+id/lvPaymentSummary"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:listSelector="@android:color/transparent"-->
+                    <!--android:scrollbars="none"-->
+                    <!--android:divider="#E3E3E5"-->
+                    <!--android:dividerHeight="0.5dp"/>-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="blocksDescendants"
+                    android:layout_marginTop="20dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/lvPaymentSummary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#E3E3E5"
+                android:layout_marginBottom="0dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/lblPaymentMethodTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="@string/payment_method"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:textSize="16sp"
+                    android:textColor="#222222" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollIndicators="none">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="20dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp">
+
+                        <ImageView
+                            android:id="@+id/imgCash"
+                            android:layout_width="56dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/icon_cash"
+                            android:visibility="gone"/>
+
+                        <RelativeLayout
+                            android:id="@+id/pnlCash"
+                            android:layout_width="56dp"
+                            android:layout_height="2dp"
+                            android:layout_below="@id/imgCash"
+                            android:layout_marginTop="10dp"
+                            android:background="#222222"
+                            android:visibility="gone"/>
+
+                        <ImageView
+                            android:id="@+id/imgKNET"
+                            android:layout_width="51dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/icon_knet"
+                            android:layout_toEndOf="@+id/imgCash"/>
+
+                        <RelativeLayout
+                            android:id="@+id/pnlKNET"
+                            android:layout_width="51dp"
+                            android:layout_height="2dp"
+                            android:layout_below="@id/imgKNET"
+                            android:layout_toEndOf="@+id/imgCash"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="0dp"
+                            android:background="#222222"
+                            android:visibility="gone"/>
+
+                        <ImageView
+                            android:id="@+id/imgCreditCard"
+                            android:layout_width="112dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/icon_credit_card"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toEndOf="@+id/imgKNET"
+                            android:visibility="gone"/>
+
+                        <RelativeLayout
+                            android:id="@+id/pnlCreditCard"
+                            android:layout_width="112dp"
+                            android:layout_height="2dp"
+                            android:layout_below="@id/imgCreditCard"
+                            android:layout_toEndOf="@+id/imgKNET"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="30dp"
+                            android:background="#222222"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/lblOrderAfterTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_before_after"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:textSize="16sp"
+                    android:textColor="#222222"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="20dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:layout_marginBottom="10dp">
+
+
+                <Button
+                    android:id="@+id/btnSubmitOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit_order"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:textAllCaps="false"
+                    android:background="@drawable/bg_1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

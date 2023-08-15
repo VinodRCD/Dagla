@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemDetailsActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vPagerImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:layout_centerInParent="true"/>
+
+
+
+                <ImageView
+                    android:id="@+id/imgOverlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabDots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:tabBackground="@drawable/bg_dots"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp"
+                android:layoutDirection="ltr"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:color/white">
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layoutDirection="ltr">
+
+                    <TextView
+                        android:id="@+id/lblBrand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:textSize="16sp"
+                        android:textColor="#222222"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/avenir_next_medium"
+                        android:gravity="right"/>
+
+                    <TextView
+                        android:id="@+id/lblStock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:text="In Stock"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textSize="16sp"
+                        android:textColor="#222222"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/avenir_next_medium"
+                        android:gravity="left"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/lblName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textSize="16sp"
+                    android:textColor="#222222"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/avenir_next_medium"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/lblPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="#222222"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/avenir_next_medium"/>
+
+                        <TextView
+                            android:id="@+id/lblDiscount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:textSize="13sp"
+                            android:textColor="#222222"
+                            android:textStyle="normal"
+                            android:fontFamily="@font/avenir_next_medium"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/lblNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_new"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:paddingStart="4dp"
+                        android:paddingEnd="4dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:textStyle="normal"
+                        android:fontFamily="@font/avenir_next_medium"
+                        android:textSize="10sp"
+                        android:textColor="@android:color/white"
+                        android:text="@string/n3w"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/lblSale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_sale"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:paddingStart="4dp"
+                        android:paddingEnd="4dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:textStyle="normal"
+                        android:fontFamily="@font/avenir_next_medium"
+                        android:textSize="10sp"
+                        android:textColor="@android:color/white"
+                        android:text="@string/sale"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/lblColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textSize="16sp"
+                    android:textColor="#222222"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:id="@+id/pnlSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/lblSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="#222222"
+                        android:text="@string/size"
+                        android:textStyle="normal"
+                        android:fontFamily="@font/avenir_next_medium"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:id="@+id/txtSize"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:focusable="false"
+                        android:layout_marginStart="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/lblSize"
+                        android:textSize="16sp"
+                        android:textColor="#222222"
+                        android:textStyle="normal"
+                        android:fontFamily="@font/avenir_next_medium"/>
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_desc"
+                        android:scaleType="centerCrop"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/lblSizeGuide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/view_size_guide"
+                    android:textColor="#222222"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:textAllCaps="false"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="2dp"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/colorLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:text="@string/color"
+                        android:textSize="16sp"
+                        android:textColor="#222222"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/avenir_next_medium"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/color_recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:padding="0dp"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/sizeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:text="@string/size"
+                        android:textSize="16sp"
+                        android:textColor="#222222"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/avenir_next_medium"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/size_recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:padding="0dp"/>
+
+                </LinearLayout>
+
+
+
+                <Button
+                    android:id="@+id/btnAddToCart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/add_to_shopping_bag"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:textAllCaps="false"
+                    android:background="@drawable/bg_1"
+                    android:drawableLeft="@drawable/icon_cart_small"
+                    android:drawablePadding="0dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/wishlistLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/bg_2">
+
+                    <ImageView
+                        android:id="@+id/wishlistImg"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/wishlist_1_icon"
+                        android:layout_marginLeft="15dp"/>
+
+
+                    <TextView
+                        android:id="@+id/lblWishlistTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#222222"
+                        android:text="@string/add_to_wishlist"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/avenir_next_medium"
+                        android:textAllCaps="false"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/btnAddToWishlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_to_wishlist"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#222222"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:textAllCaps="false"
+                    android:background="@drawable/add_to_wishlist_btn_bg"
+                    android:drawableLeft="@drawable/wishlist_1_small_icon"
+                    android:drawablePadding="0dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+
+                <RelativeLayout
+                    android:id="@+id/pnlDescriptionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/imgWishlist"
+                    android:background="@android:color/transparent"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp">
+
+                    <TextView
+                        android:id="@+id/lblDescriptionTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/avenir_next_medium"
+                        android:text="@string/description"
+                        android:textColor="#222222"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imgPlus"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_plus"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/imgWishlist"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/wishlist_1_icon"
+                    android:layout_marginLeft="15dp"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/pnlDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#4A4A4A"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/avenir_next_medium"/>
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/pnlRelatedColors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp">
+
+                <TextView
+                    android:id="@+id/lblTitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/related_colors"
+                    android:textColor="#222222"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:textAllCaps="false"
+                    android:layout_margin="15dp"/>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vPagerImages1"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_gravity="center"/>
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabDots1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:tabBackground="@drawable/intro_bg_dots"
+                    app:tabGravity="center"
+                    app:tabIndicatorHeight="0dp"
+                    android:layoutDirection="ltr"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pnlRelated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp">
+
+                <TextView
+                    android:id="@+id/lblRelatedItemsTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:textSize="18sp"
+                    android:textColor="#222222"
+                    android:text="@string/related_items"
+                    android:gravity="center"
+                    android:layout_margin="15dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvRelatedItems"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"/>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vPagerImages2"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_gravity="center"/>
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabDots2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:tabBackground="@drawable/intro_bg_dots"
+                    app:tabGravity="center"
+                    app:tabIndicatorHeight="0dp"
+                    android:layoutDirection="ltr"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

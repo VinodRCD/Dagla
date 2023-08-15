@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:id="@+id/itemLayout">
+
+    <ImageView
+        android:id="@+id/imgPic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentRight="true"/>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toLeftOf="@+id/imgPic"
+        android:layout_marginRight="10dp">
+
+        <!--<TextView-->
+        <!--android:id="@+id/lblBrand"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Brand"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textColor="#121314"-->
+        <!--android:textStyle="bold"-->
+        <!--android:maxLines="1"-->
+        <!--android:fontFamily="@font/avenir_next_medium"/>-->
+
+        <TextView
+            android:id="@+id/lblName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Name"
+            android:textSize="16sp"
+            android:textColor="#121314"
+            android:textStyle="normal"
+            android:fontFamily="@font/avenir_next_medium"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:gravity="right"/>
+
+        <TextView
+            android:id="@+id/lblSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Name"
+            android:textSize="14sp"
+            android:textColor="#121314"
+            android:textStyle="normal"
+            android:fontFamily="@font/avenir_next_medium"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:gravity="right"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp">
+
+
+            <TextView
+                android:id="@+id/lblQty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Name"
+                android:textSize="16sp"
+                android:textColor="#121314"
+                android:textStyle="normal"
+                android:fontFamily="@font/avenir_next_medium"
+                android:gravity="left"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/lblPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="16KD"
+                android:textSize="16sp"
+                android:textColor="#121314"
+                android:textStyle="bold"
+                android:fontFamily="@font/avenir_next_medium"
+                android:visibility="visible"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonsLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layoutDirection="rtl"
+            android:layout_gravity="right">
+
+            <Button
+                android:id="@+id/btnReturns"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/returns_ar"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:fontFamily="@font/ge_dinar_one_light"
+                android:background="@drawable/btn_skip_intro"/>
+
+            <Button
+                android:id="@+id/btnExchange"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="0dp"
+                android:text="@string/exchange_ar"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:fontFamily="@font/ge_dinar_one_light"
+                android:background="@drawable/btn_skip_intro"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonsLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layoutDirection="rtl"
+            android:layout_gravity="right">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="0dp">
+
+                <Button
+                    android:id="@+id/btnExchanged"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/exchanged_ar"
+                    android:textSize="12sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:background="@drawable/btn_exchanged"/>
+
+                <TextView
+                    android:id="@+id/lblExchangedDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="Name"
+                    android:textSize="16sp"
+                    android:textColor="#121314"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:gravity="right"
+                    android:layout_marginStart="10dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lblExchangedDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Name"
+                android:textSize="14sp"
+                android:textColor="#121314"
+                android:textStyle="normal"
+                android:fontFamily="@font/avenir_next_medium"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:gravity="right"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

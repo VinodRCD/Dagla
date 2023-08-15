@@ -1,0 +1,478 @@
+<resources>
+
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="android:windowBackground">@drawable/bg_window</item>-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+        <!--<item name="actionBarStyle">@style/ActionBar</item>-->
+        <!--<item name="editTextStyle">@style/EditTextDefault</item>-->
+        <!--<item name="android:statusBarColor">@android:color/white</item>-->
+        <!--<item name="android:windowLightStatusBar">true</item>-->
+    <!--</style>-->
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@drawable/bg_window</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="editTextStyle">@style/EditTextDefault</item>
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="SplashAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@drawable/bg_window</item>
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#FFFFFF</item>
+        <item name="android:windowDisablePreview">true</item>
+
+        <item name="android:statusBarColor">#000000</item>
+    </style>
+
+    <style name="TransparentTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionBarStyle">@style/ActionBar</item>
+        <item name="editTextStyle">@style/EditTextDefault</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@android:color/white</item>
+        <item name="titleTextStyle">@style/TitleTextStyle</item>
+    </style>
+
+    <style name="EditTextDefault" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#4A4A4A</item>
+    </style>
+
+    <style name="TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.2</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+<!--    <style name="btnDefault">-->
+<!--        <item name="android:background">@drawable/btn_default</item>-->
+<!--        <item name="android:textSize">16sp</item>-->
+<!--        <item name="android:paddingTop">5dp</item>-->
+<!--        <item name="android:paddingBottom">5dp</item>-->
+<!--        <item name="android:paddingStart">10dp</item>-->
+<!--        <item name="android:paddingEnd">10dp</item>-->
+<!--        <item name="android:textColor">#eeeeee</item>-->
+<!--        <item name="android:textStyle">bold</item>-->
+<!--        <item name="android:fontFamily">@font/avenir_next_medium</item>-->
+<!--        <item name="android:textAllCaps">false</item>-->
+<!--    </style>-->
+
+<!--    <style name="btnDefaultAr">-->
+<!--        <item name="android:background">@drawable/btn_default</item>-->
+<!--        <item name="android:textSize">16sp</item>-->
+<!--        <item name="android:paddingTop">5dp</item>-->
+<!--        <item name="android:paddingBottom">5dp</item>-->
+<!--        <item name="android:paddingStart">10dp</item>-->
+<!--        <item name="android:paddingEnd">10dp</item>-->
+<!--        <item name="android:textColor">#eeeeee</item>-->
+<!--        <item name="android:textStyle">bold</item>-->
+<!--        <item name="android:fontFamily">@font/ge_dinar_one_light</item>-->
+<!--        <item name="android:textAllCaps">false</item>-->
+<!--    </style>-->
+
+    <style name="btnLink" parent="Widget.AppCompat.Button.Borderless">
+        <item name="colorButtonNormal">@android:color/transparent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:fontFamily">@font/avenir_next_medium</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="btnLinkAr" parent="Widget.AppCompat.Button.Borderless">
+        <item name="colorButtonNormal">@android:color/transparent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:fontFamily">@font/ge_dinar_one_light</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="btnTerms" parent="Widget.AppCompat.Button.Borderless">
+        <item name="colorButtonNormal">@android:color/transparent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="btnRedeem" parent="Widget.AppCompat.Button.Borderless">
+        <item name="colorButtonNormal">@android:color/transparent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/avenir_next_medium</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+
+    <style name="btnRedeemAr" parent="Widget.AppCompat.Button.Borderless">
+        <item name="colorButtonNormal">@android:color/transparent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/ge_dinar_one_medium</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="btnCancel" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:colorButtonNormal">@android:color/transparent</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/avenir_next_medium</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <style name="btnApply" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:colorButtonNormal">@android:color/transparent</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/avenir_next_medium</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <style name="rbFilter">
+        <item name="android:textColor">@drawable/filter_radio_text_color</item>
+        <item name="android:background">@drawable/filter_radio_bg_color</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/avenir_next_medium</item>
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabBackground">@drawable/tab_background</item>
+        <item name="tabTextAppearance">@style/MyCustomTabText</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+    </style>
+
+    <style name="MyCustomTabText" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    /////////////
+
+    <style name="TitleTextStyle2" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/avenir_next_medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+
+    <style name="TitleTextStyle2_ar" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/ge_dinar_one_medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="btnSkipIntro">
+        <item name="android:background">@drawable/btn_skip_intro</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/avenir_next_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="btnSkipIntroAr">
+        <item name="android:background">@drawable/btn_skip_intro</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/ge_dinar_one_light</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <style name="categoriesName" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#eeeeee</item>
+        <item name="android:fontFamily">normal</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="btnSignIn">
+        <item name="android:background">@drawable/btn_skip_intro</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/avenir_next_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <style name="btnSignInAr">
+        <item name="android:background">@drawable/btn_skip_intro</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/ge_dinar_one_light</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <style name="btnRegister">
+        <item name="android:background">@drawable/bg_border</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:fontFamily">@font/avenir_next_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <style name="btnRegisterAr">
+        <item name="android:background">@drawable/bg_border</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:fontFamily">@font/ge_dinar_one_light</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="btnLink2" parent="Widget.AppCompat.Button.Borderless">
+    <item name="colorButtonNormal">@android:color/transparent</item>
+    <item name="android:textAllCaps">false</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:textColor">#222222</item>
+    <item name="android:padding">5dp</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:fontFamily">@font/avenir_next_medium</item>
+    </style>
+
+
+    <style name="btnLink2Ar" parent="Widget.AppCompat.Button.Borderless">
+        <item name="colorButtonNormal">@android:color/transparent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/ge_dinar_one_medium</item>
+    </style>
+
+    <style name="btnLink3" parent="Widget.AppCompat.Button.Borderless">
+        <item name="colorButtonNormal">@android:color/transparent</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+
+    <style name="btnContactEmailUs">
+        <item name="android:background">@drawable/bg_email_us_btn</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:fontFamily">@font/avenir_next_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="btnContactEmailUsAr">
+        <item name="android:background">@drawable/bg_email_us_btn</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:fontFamily">@font/ge_dinar_one_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <style name="TitleTextStyle5" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:fontFamily">@font/avenir_next_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+
+
+
+    <style name="btnAddToCartEn">
+        <item name="android:background">@drawable/btn_default</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:textColor">#eeeeee</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/avenir_next_medium</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <style name="btnAddToCartAr">
+        <item name="android:background">@drawable/btn_default</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:textColor">#eeeeee</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/ge_dinar_one_light</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="btnAddToWishlistEn">
+        <item name="android:background">@drawable/add_to_wishlist_btn_bg</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:fontFamily">@font/avenir_next_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="btnAddToWishlistAr">
+        <item name="android:background">@drawable/add_to_wishlist_btn_bg</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:fontFamily">@font/ge_dinar_one_light</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="AppTheme.Picker" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">normal</item>
+
+    </style>
+
+
+
+    <style name="btnTabEn">
+
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/avenir_next_medium</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="btnTabAr">
+
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/ge_dinar_one_light</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+</resources>

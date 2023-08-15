@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imgPic"
+        android:layout_width="100dp"
+        android:layout_height="125dp"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@+id/imgPic"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:id="@+id/lblBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#121314"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:fontFamily="@font/avenir_next_medium"/>
+
+        <TextView
+            android:id="@+id/lblName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textSize="16sp"
+            android:textColor="#121314"
+            android:textStyle="normal"
+            android:fontFamily="@font/avenir_next_medium"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/lblPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            android:textColor="#121314"
+            android:textStyle="bold"
+            android:fontFamily="@font/avenir_next_medium"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toEndOf="@+id/imgPic"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="-"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:fontFamily="@font/avenir_next_medium"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_3"/>
+
+        <TextView
+            android:id="@+id/lblQty"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/bg_border"
+            android:textStyle="normal"
+            android:fontFamily="@font/avenir_next_medium"
+            android:textSize="14sp"
+            android:textColor="#4A4A4A"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:text="1"/>
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="+"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:fontFamily="@font/avenir_next_medium"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_3"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgDelete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/delete_icon"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

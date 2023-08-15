@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary" tools:ignore="MissingDefaultResource">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorSuccess">#22B573</color>
+    <color name="colorError">#C1272D</color>
+
+    <color name="colorNavIcon">#dae9f6</color>
+    <color name="colorNavText">#01294b</color>
+
+    <color name="indexer_bar_bg_color">#40000000</color>
+    <color name="indexer_bar_selected_color">#3399ff</color>
+    <color name="letter_bg_color">#1C86EE</color>
+
+    <color name="number_picker_title_bar_color">#B8B8B8</color>
+    <color name="number_picker_btn_text_color">#000000</color>
+
+
+    <color name="text_color">#222222</color>
+
+    <color name="white_color">#FFFFFF</color>
+    <color name="disable_date_color">#B8B8B8</color>
+
+    <color name="tab_un_selected">#222222</color>
+    <color name="tab_selected">#D7D7D7</color>
+
+</resources>
+
+    <!--
+        100% — FF
+        95% — F2
+        90% — E6
+        85% — D9
+        80% — CC
+        75% — BF
+        70% — B3
+        65% — A6
+        60% — 99
+        55% — 8C
+        50% — 80
+        45% — 73
+        40% — 66
+        35% — 59
+        30% — 4D
+        25% — 40
+        20% — 33
+        15% — 26
+        10% — 1A
+        5% — 0D
+        0% — 00
+        -->

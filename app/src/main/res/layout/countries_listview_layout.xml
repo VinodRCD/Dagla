@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+
+
+        <ImageView
+            android:id="@+id/flagImg"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/countryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/flagImg"
+            android:layout_centerVertical="true"
+            android:gravity="center|left"
+            android:text="Login"
+            android:textColor="#192625"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:maxLines="1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="0.5dp"/>
+
+
+        <ImageView
+            android:id="@+id/countrySelImg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

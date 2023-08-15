@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "303802188517",
+    "firebase_url": "https://dagla-f529d.firebaseio.com",
+    "project_id": "dagla-f529d",
+    "storage_bucket": "dagla-f529d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303802188517:android:2ac041c33f883455",
+        "android_client_info": {
+          "package_name": "com.dagla.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303802188517-t1uqg6ra9o3ooai6409pkbg0pg8gct7m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFHPrrMotHgbRYPImg5uANQka8WcW2bsk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303802188517-t1uqg6ra9o3ooai6409pkbg0pg8gct7m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

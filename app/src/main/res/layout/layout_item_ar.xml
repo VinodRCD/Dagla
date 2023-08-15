@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pnlHolder"
+    android:layout_width="match_parent"
+    android:layout_height="330dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="226dp">
+
+        <ImageView
+            android:id="@+id/imgPic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/lblNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_new"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:text="@string/n3w"
+            android:textStyle="normal"
+            android:fontFamily="@font/ge_dinar_one_light"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/lblSale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_sale"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:text="@string/sale"
+            android:textStyle="normal"
+            android:fontFamily="@font/ge_dinar_one_light"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lblBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="#222222"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/ge_dinar_one_medium"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/lblName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_marginTop="5dp"
+        android:textColor="#222222"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:fontFamily="@font/ge_dinar_one_medium"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/lblOldPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:textColor="#222222"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            android:fontFamily="@font/ge_dinar_one_medium"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/lblPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/ge_dinar_one_medium"
+            android:gravity="center"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/drawable/below_shadow.xml" value="0.196" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/drawable/bg_1.xml" value="0.196" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/drawable/bg_2.xml" value="0.196" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/drawable/bg_3.xml" value="0.196" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/drawable/bg_border.xml" value="0.189" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/drawable/bg_dots.xml" value="0.196" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/drawable/bg_edit_text.xml" value="0.189" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/drawable/btn_1_bg.xml" value="0.196" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/drawable/btn_default.xml" value="0.196" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/drawable/btn_exchanged.xml" value="0.196" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/drawable/btn_skip_intro.xml" value="0.196" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/drawable/cal_click_background.xml" value="0.196" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/drawable/color_bg_1.xml" value="0.2135" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/drawable/customer_btn_2_bg.xml" value="0.189" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/drawable/dot_off.xml" value="0.196" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/drawable/dot_on.xml" value="0.196" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/drawable/intro_bg_dots.xml" value="0.196" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/activity_add_address.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/activity_cart.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/activity_change_password.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/activity_checkout_delivery.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/activity_checkout_payment.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/activity_contact_us.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/activity_express_checkout.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/activity_forgot_password.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/activity_introduction.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/activity_item_details.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/activity_landing.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/activity_landing_ar.xml" value="0.19010416666666666" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/activity_login.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/activity_my_addresses.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/activity_my_profile.xml" value="0.36666666666666664" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/activity_register.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/activity_splash.xml" value="0.17831813576494426" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/color_item_layout.xml" value="0.2921875" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/filter_colors_item.xml" value="0.18072916666666666" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/filter_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/filter_sizes_item.xml" value="0.18072916666666666" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/first.xml" value="0.20677083333333332" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/forgot_password_activity.xml" value="0.36666666666666664" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/forgot_password_activity_ar.xml" value="0.36666666666666664" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_account.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_add_address.xml" value="0.17255434782608695" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_add_address_ar.xml" value="0.17395833333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_cart.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_cart_ar.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_cart_ar_new.xml" value="0.17395833333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_cart_new.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_categories.xml" value="0.2921875" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_change_password.xml" value="0.17255434782608695" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_change_password_ar.xml" value="0.17395833333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_checkout_delivery.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_checkout_delivery_ar.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_checkout_payment.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_checkout_payment_ar.xml" value="0.17395833333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_checkout_payment_new.xml" value="0.17831813576494426" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_checkout_payment_new_ar.xml" value="0.17831813576494426" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_contact_us.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_express_checkout.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_express_checkout_ar.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_forgot_password.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_forgot_password_ar.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_home.xml" value="0.17831813576494426" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_home_new.xml" value="0.20520833333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_home_new_ar.xml" value="0.19010416666666666" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_home_visit_service.xml" value="0.17255434782608695" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_home_visit_service_ar.xml" value="0.17831813576494426" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_home_visit_service_terms.xml" value="0.36666666666666664" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_login.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_login_ar.xml" value="0.17395833333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_my_account.xml" value="0.17135416666666667" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_my_account_ar.xml" value="0.17147922998986828" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_my_addresses.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_my_addresses_ar.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_my_profile.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_my_profile_ar.xml" value="0.17395833333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_product_description.xml" value="0.17255434782608695" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_product_description_ar.xml" value="0.16666666666666666" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_products.xml" value="0.36666666666666664" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_register.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_register_ar.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_sub_categories.xml" value="0.36666666666666664" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_tailoring.xml" value="0.17603850050658562" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_tailoring_ar.xml" value="0.17603850050658562" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/fragment_visit_us.xml" value="0.17831813576494426" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/home_cate_item_layout.xml" value="0.19635416666666666" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/home_cate_item_layout_ar.xml" value="0.19635416666666666" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/home_image_item.xml" value="0.28072916666666664" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/home_pager_layout.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/introduction_activity.xml" value="0.17255434782608695" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/introduction_item.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/introduction_pager_layout.xml" value="0.17255434782608695" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/layout_cart.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/layout_cart_ar.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/layout_cart_ar_new.xml" value="0.24479166666666666" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/layout_cart_new.xml" value="0.24479166666666666" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/layout_categories_item.xml" value="0.17603850050658562" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/layout_item.xml" value="0.18072916666666666" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/layout_order_list_item.xml" value="0.17255434782608695" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/layout_order_list_item_ar.xml" value="0.17255434782608695" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/layout_select_size.xml" value="0.17255434782608695" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/layout_wishlist.xml" value="0.17831813576494426" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/layout_wishlist_ar.xml" value="0.17831813576494426" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/login_activity.xml" value="0.17831813576494426" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/login_activity_ar.xml" value="0.36666666666666664" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/main_activity_ar_new.xml" value="0.17255434782608695" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/main_activity_new.xml" value="0.17831813576494426" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/register_activity.xml" value="0.36666666666666664" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/register_activity_ar.xml" value="0.36666666666666664" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/sample.xml" value="0.20677083333333332" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/size_item_layout.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/size_item_layout_ar.xml" value="0.18072916666666666" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/starting_activity.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/starting_activity_ar.xml" value="0.36666666666666664" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/tab_layout.xml" value="0.17831813576494426" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/top_bar_layout.xml" value="0.17831813576494426" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/layout/top_bar_layout_ar.xml" value="0.17147922998986828" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.18802083333333333" />
+        <entry key="..\:/Vinod/Work/Projects/Dagla/app/src/main/res/menu/bottom_navigation_menu_ar.xml" value="0.17395833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="NullableNotNullManager">
+    <option name="myDefaultNullable" value="android.support.annotation.Nullable" />
+    <option name="myDefaultNotNull" value="android.support.annotation.NonNull" />
+    <option name="myNullables">
+      <value>
+        <list size="15">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.Nullable" />
+          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nullable" />
+          <item index="2" class="java.lang.String" itemvalue="javax.annotation.CheckForNull" />
+          <item index="3" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.Nullable" />
+          <item index="4" class="java.lang.String" itemvalue="android.support.annotation.Nullable" />
+          <item index="5" class="java.lang.String" itemvalue="androidx.annotation.Nullable" />
+          <item index="6" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNullable" />
+          <item index="7" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.Nullable" />
+          <item index="8" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableDecl" />
+          <item index="9" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableType" />
+          <item index="10" class="java.lang.String" itemvalue="android.annotation.Nullable" />
+          <item index="11" class="java.lang.String" itemvalue="com.android.annotations.Nullable" />
+          <item index="12" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.Nullable" />
+          <item index="13" class="java.lang.String" itemvalue="io.reactivex.annotations.Nullable" />
+          <item index="14" class="java.lang.String" itemvalue="io.reactivex.rxjava3.annotations.Nullable" />
+        </list>
+      </value>
+    </option>
+    <option name="myNotNulls">
+      <value>
+        <list size="14">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.NotNull" />
+          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nonnull" />
+          <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.NonNull" />
+          <item index="3" class="java.lang.String" itemvalue="android.support.annotation.NonNull" />
+          <item index="4" class="java.lang.String" itemvalue="androidx.annotation.NonNull" />
+          <item index="5" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNonNull" />
+          <item index="6" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.NonNull" />
+          <item index="7" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullDecl" />
+          <item index="8" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullType" />
+          <item index="9" class="java.lang.String" itemvalue="android.annotation.NonNull" />
+          <item index="10" class="java.lang.String" itemvalue="com.android.annotations.NonNull" />
+          <item index="11" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.NonNull" />
+          <item index="12" class="java.lang.String" itemvalue="io.reactivex.annotations.NonNull" />
+          <item index="13" class="java.lang.String" itemvalue="io.reactivex.rxjava3.annotations.NonNull" />
+        </list>
+      </value>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

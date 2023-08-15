@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+        <EditText
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:inputType="textPersonName"
+            android:hint="@string/name"
+            android:textStyle="normal"
+            android:fontFamily="@font/avenir_next_medium"/>
+
+        <EditText
+            android:id="@+id/txtMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:hint="@string/mobile_number"
+            android:layout_marginTop="25dp"
+            android:textStyle="normal"
+            android:fontFamily="@font/avenir_next_medium"
+            android:inputType="phone"/>
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email_address"
+            android:layout_marginTop="25dp"
+            android:textStyle="normal"
+            android:fontFamily="@font/avenir_next_medium"/>
+
+        <EditText
+            android:id="@+id/txtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+
+            android:hint="@string/address"
+            android:layout_marginTop="25dp"
+            android:textStyle="normal"
+            android:fontFamily="@font/avenir_next_medium"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/lblPaymentOptionTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/payment_options"
+                android:textStyle="bold"
+                android:fontFamily="@font/avenir_next_medium"
+                android:textSize="14sp"
+                android:textColor="#222222"
+                android:textAllCaps="true"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imgKnet"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/radio_btn_1"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:visibility="visible"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/lblKnetTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/k_net"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:textSize="14sp"
+                    android:textColor="#222222"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/imgCreditCard"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/radio_btn_1"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:visibility="visible"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/lblCreditCardTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/credit_card"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:textSize="14sp"
+                    android:textColor="#222222"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imgMyWallet"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/radio_btn_1"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:visibility="visible"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/lblMyWalletTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_wallet"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:textSize="14sp"
+                    android:textColor="#222222"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/you_will_charge"
+                android:textStyle="normal"
+                android:fontFamily="@font/avenir_next_medium"
+                android:textSize="14sp"
+                android:textColor="#222222"
+                android:textAllCaps="false"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            style="@style/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/slotBookingLayout"
+            android:text="@string/submit"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!--<EditText-->
+    <!--android:id="@+id/txtSearch"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:lines="1"-->
+    <!--android:inputType="textPersonName"-->
+    <!--android:hint="@string/name"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintRight_toRightOf="parent"/>-->
+
+
+
+    <FrameLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+
+        android:background="#F2F2F2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:textColor="#A4A4A4"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintLeft_toRightOf="@+id/alphabetsListviewLayout"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:cacheColorHint="@null"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:layout_marginTop="0dp"
+        android:scrollbars="none"/>
+
+    <RelativeLayout
+        android:id="@+id/alphabetsListviewLayout"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/transparent"
+        android:gravity="center">
+        <ListView
+            android:id="@+id/alphabetsListview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:dividerHeight="0dp"
+            android:divider="@android:color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:cacheColorHint="@null"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:scrollbars="none"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/section_toast_layout"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/current_letter_bubble"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/section_toast_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#8E8E8E"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

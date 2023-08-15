@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_window"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            style="@style/ActionBar"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="21dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:layout_gravity="start"
+                android:src="@drawable/icon_back"
+                android:scaleType="centerCrop"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/txtSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="end"
+                android:lines="1"
+                android:inputType="text"
+                android:hint="@string/search_here_"
+                android:imeOptions="actionSearch"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/lblTitle"
+                style="@style/TitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/app_name"/>
+
+            <LinearLayout
+                android:id="@+id/pnlActionBarButtons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="end"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="10dp">
+
+                <RelativeLayout
+                    android:layout_width="19dp"
+                    android:layout_height="30dp">
+
+                    <ImageView
+                        android:id="@+id/imgCart"
+                        android:layout_width="19dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/icon_cart"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        android:id="@+id/lblCartCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="9sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+                
+                <ImageView
+                    android:id="@+id/imgSearch"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_search"
+                    android:layout_marginStart="25dp"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="5dp"
+        android:divider="@android:color/white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <RelativeLayout
+        android:id="@+id/pnlDim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"
+        android:visibility="gone"/>
+
+</android.support.design.widget.CoordinatorLayout>

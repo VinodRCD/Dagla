@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/lblTitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Express Delivery"
+                    android:textColor="#222222"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:maxLines="2"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/lblPrice1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"/>
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/img3"-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:background="@drawable/wishlist_2_icon"-->
+                    <!--android:layout_gravity="center|center_vertical"-->
+                    <!--android:layout_marginLeft="5dp"/>-->
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp">
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/lblTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Express Delivery"
+                    android:textColor="#222222"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:maxLines="2"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/lblPrice2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"/>
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/img4"-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:background="@drawable/wishlist_2_icon"-->
+                    <!--android:layout_gravity="center|center_vertical"-->
+                    <!--android:layout_marginLeft="5dp"/>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

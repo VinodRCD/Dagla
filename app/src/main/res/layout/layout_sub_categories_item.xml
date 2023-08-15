@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/itemLayout">
+
+
+    <TextView
+        android:id="@+id/subCategoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Brands"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:fontFamily="@font/avenir_next_medium"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"/>
+
+
+</RelativeLayout>

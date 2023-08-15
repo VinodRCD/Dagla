@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/tab_home_icon"
+        android:title="الرئسيه" />
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_brands"-->
+<!--        android:icon="@drawable/tab_brands_icon"-->
+<!--        android:title="ماركات" />-->
+
+    <item
+        android:id="@+id/navigation_categories"
+        android:icon="@drawable/tab_categories_icon"
+        android:title="الأقسام" />
+
+    <item
+        android:id="@+id/navigation_visit_us"
+        android:icon="@drawable/tab_visit_us_icon"
+        android:title="تفصال" />
+
+    <item
+        android:id="@+id/navigation_my_account"
+        android:icon="@drawable/tab_account_icon"
+        android:title="حسابي" />
+
+
+
+</menu>

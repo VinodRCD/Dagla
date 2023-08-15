@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangePasswordActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:fillViewport="true">
+
+            <TextView
+                android:id="@+id/requestTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/request_a_dishdasha_ar"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:fontFamily="@font/avenir_next_regular"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_horizontal"></TextView>
+
+
+            <LinearLayout
+                android:id="@+id/btnsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/requestTxt"
+                android:background="@drawable/customer_btns__bg"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layoutDirection="rtl">
+
+                <Button
+                    android:id="@+id/btnNewCustomer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_customer_ar"
+                    android:textColor="#222222"
+                    android:fontFamily="@font/avenir_next_regular"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:layout_margin="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"/>
+
+                <Button
+                    android:id="@+id/btnExistingCustomer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/existing_customer_ar"
+                    android:textColor="#222222"
+                    android:fontFamily="@font/avenir_next_regular"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:layout_margin="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnsLayout"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/newCustomerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/newCustomerTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/new_customer_text_ar"
+                        android:singleLine="false"
+                        android:textSize="14sp"
+                        android:textColor="#000000"
+                        android:textStyle="normal"
+                        android:fontFamily="@font/avenir_next_regular"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"></TextView>
+
+                    <LinearLayout
+                        android:id="@+id/calendarLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/newCustomerTxt">
+
+                        <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:elevation="0dp"
+                            card_view:cardBackgroundColor="@android:color/transparent"
+                            card_view:cardCornerRadius="10dp"
+                            card_view:cardElevation="0dp"
+                            card_view:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/calendar_bg"
+                                android:orientation="vertical"
+                                android:padding="2dp" >
+
+                                <LinearLayout
+                                    android:id="@+id/buttonLayout"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="40dp"
+                                    android:background="#222222"
+                                    android:orientation="horizontal" >
+
+                                    <ImageView
+                                        android:id="@+id/prevMonth"
+                                        android:layout_width="13dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="10dp"
+                                        android:background="@drawable/backward_btn">
+                                    </ImageView>
+
+                                    <TextView
+                                        android:id="@+id/lblCurrentMonth"
+                                        android:layout_width="0dp"
+                                        android:layout_height="45dp"
+                                        android:layout_weight="0.5"
+                                        android:gravity="center"
+                                        android:textColor="#FFFFFF"
+                                        android:fontFamily="@font/avenir_next_regular"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold">
+
+                                    </TextView>
+
+                                    <ImageView
+                                        android:id="@+id/nextMonth"
+                                        android:layout_width="13dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginRight="10dp"
+                                        android:background="@drawable/forward_btn">
+
+                                    </ImageView>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/weekDaysLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:layout_below="@+id/buttonLayout"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal"
+                                    android:weightSum="7"
+                                    android:background="#222222">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="14sp"
+                                        android:layout_weight="1"
+                                        android:tag="dayOfWeek1"
+                                        android:text="Sun"
+                                        android:textColor="#FFFFFF"
+                                        android:textStyle="bold"
+                                        android:textAllCaps="false"
+                                        android:fontFamily="@font/avenir_next_regular"
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="14sp"
+                                        android:layout_weight="1"
+                                        android:tag="dayOfWeek2"
+                                        android:text="Mon"
+                                        android:textColor="#FFFFFF"
+                                        android:textStyle="bold"
+                                        android:textAllCaps="false"
+                                        android:fontFamily="@font/avenir_next_regular"
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="14sp"
+                                        android:layout_weight="1"
+                                        android:tag="dayOfWeek3"
+                                        android:text="Tue"
+                                        android:textColor="#FFFFFF"
+                                        android:textStyle="bold"
+                                        android:textAllCaps="false"
+                                        android:fontFamily="@font/avenir_next_regular"
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="14sp"
+                                        android:layout_weight="1"
+                                        android:tag="dayOfWeek4"
+                                        android:text="Wed"
+                                        android:textColor="#FFFFFF"
+                                        android:textStyle="bold"
+                                        android:textAllCaps="false"
+                                        android:fontFamily="@font/avenir_next_regular"
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="14sp"
+                                        android:layout_weight="1"
+                                        android:tag="dayOfWeek5"
+                                        android:text="Thu"
+                                        android:textColor="#FFFFFF"
+                                        android:textStyle="bold"
+                                        android:textAllCaps="false"
+                                        android:fontFamily="@font/avenir_next_regular"
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="14sp"
+                                        android:layout_weight="1"
+                                        android:tag="dayOfWeek6"
+                                        android:text="Fri"
+                                        android:textColor="#FFFFFF"
+                                        android:textStyle="bold"
+                                        android:textAllCaps="false"
+                                        android:fontFamily="@font/avenir_next_regular"
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="14sp"
+                                        android:layout_weight="1"
+                                        android:tag="dayOfWeek7"
+                                        android:text="Sat"
+                                        android:textColor="#FFFFFF"
+                                        android:textStyle="bold"
+                                        android:textAllCaps="false"
+                                        android:fontFamily="@font/avenir_next_regular"
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"/>
+
+                                </LinearLayout>
+
+<!--                                <GridView-->
+<!--                                    android:id="@+id/calendar"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_below="@+id/weekDaysLayout"-->
+<!--                                    android:numColumns="7"-->
+
+<!--                                    android:background="@android:color/transparent"-->
+<!--                                    android:nestedScrollingEnabled="false">-->
+
+<!--                                </GridView>-->
+
+                                <com.dagla.android.activity.ExpandableHeightGridView
+                                    android:id="@+id/calendar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/weekDaysLayout"
+                                    android:numColumns="7"
+                                    android:stretchMode="columnWidth"/>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/slotBookingLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/calendarLayout"
+                        android:layout_margin="15dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/selectSlot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:hint="Select Slot"
+                            android:text=""
+                            android:singleLine="false"
+                            android:textSize="14sp"
+                            android:textColor="#000000"
+                            android:textStyle="normal"
+                            android:fontFamily="@font/avenir_next_medium"
+                            android:padding="8dp"></TextView>
+
+                        <Button
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/icon_desc"
+                            android:layout_margin="15dp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#222222"/>
+
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/btnNext"
+                        style="@style/btnSignInAr"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/slotBookingLayout"
+                        android:text="@string/next_ar"
+                        android:layout_margin="10dp"/>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/existingCustomerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/existingCustomerTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/existing_customer_text_ar"
+                        android:singleLine="false"
+                        android:textSize="14sp"
+                        android:textColor="#000000"
+                        android:textStyle="normal"
+                        android:fontFamily="@font/avenir_next_regular"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_below="@+id/existingCustomerTxt">
+
+                        <EditText
+                            android:id="@+id/txtName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:inputType="textPersonName"
+                            android:hint="@string/name_ar"
+                            android:textStyle="normal"
+                            android:fontFamily="@font/ge_dinar_one_light"
+                            android:gravity="right"/>
+
+                        <EditText
+                            android:id="@+id/txtMobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:hint="@string/mobile_number_ar"
+                            android:layout_marginTop="25dp"
+                            android:textStyle="normal"
+                            android:fontFamily="@font/ge_dinar_one_light"
+                            android:gravity="right"
+                            android:inputType="phone"/>
+
+                        <EditText
+                            android:id="@+id/txtEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:inputType="textEmailAddress"
+                            android:hint="@string/email_address_ar"
+                            android:layout_marginTop="25dp"
+                            android:textStyle="normal"
+                            android:fontFamily="@font/ge_dinar_one_light"
+                            android:gravity="right"/>
+
+                        <EditText
+                            android:id="@+id/txtAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+
+                            android:hint="@string/address_ar"
+                            android:layout_marginTop="25dp"
+                            android:textStyle="normal"
+                            android:fontFamily="@font/ge_dinar_one_light"
+                            android:gravity="right"/>
+
+                        <EditText
+                            android:id="@+id/txtBranch"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:hint="@string/branch_ar"
+                            android:layout_marginTop="25dp"
+                            android:textStyle="normal"
+                            android:fontFamily="@font/avenir_next_medium"
+                            android:drawableLeft="@drawable/icon_desc"/>
+
+                        <Button
+                            android:id="@+id/btnSubmit"
+                            style="@style/btnSignInAr"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="@string/submit_ar"
+                            android:layout_marginTop="25dp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/pickerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="#E6E6E6"
+            android:layout_above="@+id/picker">
+
+            <Button
+                android:id="@+id/pickerDoneBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:textColor="#2E9AFE"
+                android:textAllCaps="false"
+                android:layout_gravity="right|center_vertical"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:id="@+id/pickerLblQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#222222"
+                android:textStyle="normal"
+                android:text=""
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/pickerCancelBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:textColor="#2E9AFE"
+                android:textAllCaps="false"
+                android:layout_gravity="left|center_vertical"
+                android:background="@android:color/transparent"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+        <NumberPicker
+            android:id="@+id/picker"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:theme="@style/AppTheme.Picker"
+            android:layout_gravity="center"/>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

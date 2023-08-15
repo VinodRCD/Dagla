@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/tab_home_icon"
+        android:title="Home" />
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_brands"-->
+<!--        android:icon="@drawable/tab_brands_icon"-->
+<!--        android:title="Brands" />-->
+
+    <item
+        android:id="@+id/navigation_categories"
+        android:icon="@drawable/tab_categories_icon"
+        android:title="Categories" />
+
+    <item
+        android:id="@+id/navigation_visit_us"
+        android:icon="@drawable/tab_visit_us_icon"
+        android:title="Tailoring" />
+
+    <item
+        android:id="@+id/navigation_my_account"
+        android:icon="@drawable/tab_account_icon"
+        android:title="My Account" />
+
+
+
+</menu>

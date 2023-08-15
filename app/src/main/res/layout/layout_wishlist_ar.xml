@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imgPic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toStartOf="@+id/imgPic"
+        android:layout_marginEnd="20dp"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/lblBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="#121314"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:fontFamily="@font/ge_dinar_one_medium"
+            android:gravity="right"/>
+
+        <TextView
+            android:id="@+id/lblName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textSize="16sp"
+            android:textColor="#121314"
+            android:maxLines="2"
+            android:ellipsize="start"
+            android:textStyle="normal"
+            android:fontFamily="@font/ge_dinar_one_light"
+            android:gravity="right"/>
+
+        <TextView
+            android:id="@+id/lblPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:textColor="#121314"
+            android:textStyle="bold"
+            android:fontFamily="@font/ge_dinar_one_medium"
+            android:gravity="right"/>
+
+        <Button
+            android:id="@+id/btnAddToCart"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/add_to_shopping_bag_ar"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:fontFamily="@font/ge_dinar_one_medium"
+            android:background="@drawable/bg_1"
+            android:layout_gravity="right"/>
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/imgDelete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/delete_icon"
+
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

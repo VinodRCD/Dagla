@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dp"
+    android:background="@drawable/bg_window"
+    android:alpha="9">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="0dp"
+            android:padding="15dp"
+            android:background="@drawable/return_dialog_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/exchange_with_"
+                android:textSize="16sp"
+                android:textColor="#121314"
+                android:textStyle="bold"
+                android:fontFamily="@font/avenir_next_medium"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/sizeLayout"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/edit_text_bg_2"
+                    android:padding="0dp"
+                    android:layout_marginEnd="5dp">
+
+                    <TextView
+                        android:id="@+id/lblSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/size"
+                        android:textColorHint="#121314"
+                        android:textSize="14sp"
+                        android:textColor="#121314"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/avenir_next_medium"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"/>
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="10dp"
+                        android:background="@drawable/icon_desc"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="5dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/colorLayout"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/edit_text_bg_2"
+                    android:padding="0dp"
+                    android:layout_marginStart="5dp">
+
+                    <TextView
+                        android:id="@+id/lblColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/color"
+                        android:textColorHint="#121314"
+                        android:textSize="14sp"
+                        android:textColor="#121314"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/avenir_next_medium"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"/>
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="10dp"
+                        android:background="@drawable/icon_desc"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="5dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/are_you_sure_you_want_to_exchange_"
+                android:textSize="14sp"
+                android:textColor="#121314"
+                android:textStyle="bold"
+                android:fontFamily="@font/avenir_next_medium"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btnYes"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/yes"
+                    android:textSize="12sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:background="@drawable/btn_skip_intro"/>
+
+                <Button
+                    android:id="@+id/btnNo"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="0dp"
+                    android:text="@string/no"
+                    android:textSize="12sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:background="@drawable/btn_skip_intro"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

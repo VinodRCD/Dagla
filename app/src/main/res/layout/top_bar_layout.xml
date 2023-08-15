@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageButton
+            android:id="@+id/imgBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_back"
+            android:background="#FFFFFF"
+            android:layout_marginStart="0dp"/>
+
+
+        <ImageView
+            android:id="@+id/imgDaglaLogo"
+            android:layout_width="85dp"
+            android:layout_height="33dp"
+            android:src="@drawable/dagla_logo_april_2021"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/lblTitle"
+            style="@style/TitleTextStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:gravity="center_horizontal"
+            android:visibility="visible"
+            android:singleLine="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"/>
+
+        <LinearLayout
+            android:id="@+id/pnlActionBarButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp">
+
+            <RelativeLayout
+                android:id="@+id/layoutWishList"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/imgWishlist"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/wishlist_1_icon"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/lblWishlistCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_centerInParent="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    android:text="1"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/imgSearch"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:background="@drawable/search_icon"
+                android:layout_marginStart="10dp"/>
+
+
+
+            <Button
+                android:id="@+id/imgFilter"
+                android:layout_centerVertical="true"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:background="@drawable/filter_icon"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="0dp"/>
+
+            <Button
+                android:id="@+id/imgSort"
+                android:layout_centerVertical="true"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:background="@drawable/icon_sort_2"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="0dp"/>
+
+
+            <RelativeLayout
+                android:id="@+id/layoutCart"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="0dp">
+
+                <Button
+                    android:id="@+id/imgCart"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/cart_icon"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/lblCartCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible"
+                    android:text="1"
+                    android:fontFamily="@font/avenir_next_medium"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnDone"
+                android:layout_centerVertical="true"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:text="Done"
+                android:fontFamily="@font/avenir_next_medium"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="-5dp"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/imgBack2"
+            android:layout_centerVertical="true"
+            android:layout_width="14dp"
+            android:layout_height="25dp"
+            android:background="@drawable/icon_back"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="0dp"/>
+
+
+        <EditText
+            android:id="@+id/txtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgBack2"
+            android:layout_centerVertical="true"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:hint="@string/search_here_"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="25dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/avenir_next_medium"/>
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/below_shadow"/>
+
+</RelativeLayout>

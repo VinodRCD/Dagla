@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutPaymentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/pnlFooter"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="top">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#FFFFFF">
+
+                    <TextView
+                        android:id="@+id/lblAddressTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/delivery_address_ar"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/ge_dinar_one_medium"
+                        android:textSize="14sp"
+                        android:textColor="#222222"
+                        android:textAllCaps="true"/>
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/addressLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone">
+
+
+                        <Button
+                            android:id="@+id/btnChange"
+                            style="@style/btnSignIn"
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="100dp"
+                            android:layout_height="35dp"
+                            android:text="@string/change_ar"
+                            android:layout_margin="0dp"/>
+                        
+                        <TextView
+                            android:id="@+id/lblAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/btnChange"
+                            android:text="text"
+                            android:textSize="13sp"
+                            android:textColor="#4A4A4A"
+                            android:textStyle="normal"
+                            android:fontFamily="@font/ge_dinar_one_medium"
+                            android:gravity="right"/>
+
+                        
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/btnAddNewAddress"
+                        style="@style/btnSignIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="@string/add_new_address_ar"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="#F2F2F2"
+                    android:layout_marginStart="0dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#FFFFFF">
+
+                    <TextView
+                        android:id="@+id/lblPromoCodeTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/promo_code_ar"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/ge_dinar_one_medium"
+                        android:textSize="14sp"
+                        android:textColor="#222222"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <Button
+                            android:id="@+id/btnApply"
+                            android:layout_width="100dp"
+                            android:layout_height="35dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="@string/apply_ar"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/ge_dinar_one_medium"
+                            android:textAllCaps="false"
+                            android:background="@drawable/bg_1"/>
+                        
+                        <EditText
+                            android:id="@+id/txtCoupon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_toRightOf="@+id/btnApply"
+                            android:layout_alignParentRight="true"
+                            android:hint="@string/enter_coupon_code_here_ar"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/ge_dinar_one_medium"
+                            android:textAllCaps="false"
+                            android:background="@drawable/bg_2"
+                            android:padding="5dp"
+                            android:gravity="right"/>
+
+                        
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="#F2F2F2"
+                    android:layout_marginStart="0dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#FFFFFF">
+
+                    <TextView
+                        android:id="@+id/lblPaymentOptionTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/payment_options_ar"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/ge_dinar_one_medium"
+                        android:textSize="14sp"
+                        android:textColor="#222222"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/knetLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="right">
+                        
+                        <TextView
+                            android:id="@+id/lblKnetTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/k_net_ar"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/ge_dinar_one_medium"
+                            android:textSize="14sp"
+                            android:textColor="#222222"
+                            android:textAllCaps="false"
+                            android:layout_marginRight="5dp"
+                            android:layout_gravity="center_vertical"/>
+
+                        <ImageView
+                            android:id="@+id/imgKnet"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/radio_btn_1"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:visibility="visible"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/masterVisaLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="right">
+
+                        
+
+                        <TextView
+                            android:id="@+id/lblCreditCardTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/credit_card_ar"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/ge_dinar_one_medium"
+                            android:textSize="14sp"
+                            android:textColor="#222222"
+                            android:textAllCaps="false"
+                            android:layout_marginRight="5dp"
+                            android:layout_gravity="center_vertical"/>
+
+                        <ImageView
+                            android:id="@+id/imgCreditCard"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/radio_btn_1"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:visibility="visible"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/walletLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="right">
+
+
+
+                        <TextView
+                            android:id="@+id/lblWalletTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/wallet_ar"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/ge_dinar_one_medium"
+                            android:textSize="14sp"
+                            android:textColor="#222222"
+                            android:textAllCaps="false"
+                            android:layout_marginRight="5dp"
+                            android:layout_gravity="center_vertical"/>
+
+                        <ImageView
+                            android:id="@+id/imgWallet"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/radio_btn_1"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:visibility="visible"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="#F2F2F2"
+                    android:layout_marginStart="0dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#FFFFFF">
+
+                    <TextView
+                        android:id="@+id/lblItemsOrderedTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/items_ordered_ar"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/ge_dinar_one_medium"
+                        android:textSize="14sp"
+                        android:textColor="#222222"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:descendantFocusability="blocksDescendants"
+                        android:layout_marginTop="5dp">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/lvOrderSummary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:layout_marginTop="0dp"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/pnlFooter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:background="#FFFFFF">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#222222"
+                android:layout_marginBottom="5dp"/>
+
+            <LinearLayout
+                android:id="@+id/subTotalLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layoutDirection="rtl">
+
+                <TextView
+                    android:id="@+id/lblSubTotalTxt"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#222222"
+                    android:textAllCaps="false"
+                    android:text="@string/sub_total_ar"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/ge_dinar_one_medium"/>
+
+                <TextView
+                    android:id="@+id/symbol1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#222222"
+                    android:text=":"
+                    android:textStyle="normal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/ge_dinar_one_medium"/>
+
+                <TextView
+                    android:id="@+id/lblSubTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#222222"
+                    android:text=""
+                    android:textStyle="normal"
+                    android:fontFamily="@font/ge_dinar_one_medium"
+                    android:gravity="left"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/discountLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layoutDirection="rtl">
+
+                <TextView
+                    android:id="@+id/lblDiscountTxt"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#222222"
+                    android:textAllCaps="false"
+                    android:text="@string/discount_amount_ar"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/avenir_next_medium"/>
+
+                <TextView
+                    android:id="@+id/symbol3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#222222"
+                    android:text=":"
+                    android:textStyle="normal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/ge_dinar_one_medium"/>
+
+                <TextView
+                    android:id="@+id/lblDiscount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#222222"
+                    android:text=""
+                    android:textStyle="normal"
+                    android:fontFamily="@font/ge_dinar_one_medium"
+                    android:gravity="left"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/deliveryChargeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layoutDirection="rtl">
+
+                <TextView
+                    android:id="@+id/lblDeliveryChargeTxt"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#222222"
+                    android:textAllCaps="false"
+                    android:text="@string/delivery_charges_ar"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/ge_dinar_one_medium"/>
+
+                <TextView
+                    android:id="@+id/symbol2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#222222"
+                    android:text=":"
+                    android:textStyle="normal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/ge_dinar_one_medium"/>
+
+                <TextView
+                    android:id="@+id/lblDeliveryCharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#222222"
+                    android:text=""
+                    android:textStyle="normal"
+                    android:fontFamily="@font/ge_dinar_one_medium"
+                    android:gravity="left"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/totalLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layoutDirection="rtl">
+
+                <TextView
+                    android:id="@+id/lblTotalTxt"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#222222"
+                    android:textAllCaps="false"
+                    android:text="@string/total_ar"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/ge_dinar_one_medium"/>
+
+                <TextView
+                    android:id="@+id/symbol4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#222222"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/ge_dinar_one_medium"/>
+
+                <TextView
+                    android:id="@+id/lblTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#222222"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:fontFamily="@font/ge_dinar_one_medium"
+                    android:gravity="left"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSecurePayment"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="@string/secure_payment_ar"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/ge_dinar_one_medium"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_1"
+                android:layout_margin="7dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

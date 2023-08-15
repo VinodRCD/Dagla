@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp">
+
+            <RelativeLayout
+                android:id="@+id/btnLoginRegisterLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/singn_btn_bg"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp">
+
+                <Button
+                    android:id="@+id/btnLoginRegister"
+                    style="@style/btnSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_register"
+                    android:drawablePadding="10dp"
+                    android:layout_margin="7dp"/>
+
+            </RelativeLayout>
+
+
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#20000000"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"/>
+
+            <Button
+                android:id="@+id/btnMyAccountDetails"
+                style="@style/btnLink2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/my_account_details"
+                android:textAlignment="textStart"
+                android:drawablePadding="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#F2F2F2"
+                android:layout_marginStart="0dp"/>
+
+            <!--<Button-->
+                <!--android:id="@+id/btnWishlist"-->
+                <!--style="@style/btnLink2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/title_wishlist"-->
+                <!--android:textAlignment="textStart"-->
+                <!--android:drawablePadding="10dp"-->
+                <!--android:layout_marginStart="15dp"-->
+                <!--android:layout_marginEnd="15dp"/>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:background="#F2F2F2"-->
+                <!--android:layout_marginTop="0dp"/>-->
+
+            <!--<Button-->
+            <!--android:id="@+id/btnHelpAndInformation"-->
+            <!--style="@style/btnLink3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/help_information"-->
+            <!--android:textAlignment="textStart"-->
+            <!--android:drawablePadding="10dp"/>-->
+
+            <TextView
+                android:id="@+id/lblHelpAndInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/avenir_next_medium"
+                android:textSize="13sp"
+                android:textColor="#222222"
+                android:text="@string/help_information"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:padding="4dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"/>
+
+            <Button
+                android:id="@+id/btnReturnsAndExchanges"
+                style="@style/btnLink2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/returns_exchanges"
+                android:textAlignment="textStart"
+                android:drawablePadding="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#20000000"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"/>
+
+            <Button
+                android:id="@+id/btnShippingInformation"
+                style="@style/btnLink2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/shipping_information"
+                android:textAlignment="textStart"
+                android:drawablePadding="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#20000000"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"/>
+
+            <Button
+                android:id="@+id/btnPaymentSecurity"
+                style="@style/btnLink2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/payment_security"
+                android:textAlignment="textStart"
+                android:drawablePadding="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#20000000"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"/>
+
+            <Button
+                android:id="@+id/btnPrivacyPolicy"
+                style="@style/btnLink2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_policy"
+                android:textAlignment="textStart"
+                android:drawablePadding="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#20000000"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"/>
+
+            <Button
+                android:id="@+id/btnCookiePolicy"
+                style="@style/btnLink2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cookie_policy"
+                android:textAlignment="textStart"
+                android:drawablePadding="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#20000000"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"/>
+
+            <Button
+                android:id="@+id/btnTermsAndConditions"
+                style="@style/btnLink2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/terms_n_conditions"
+                android:textAlignment="textStart"
+                android:drawablePadding="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#20000000"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"/>
+
+            <Button
+                android:id="@+id/btnFaqs"
+                style="@style/btnLink2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/faqs"
+                android:textAlignment="textStart"
+                android:drawablePadding="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#F2F2F2"
+                android:layout_marginTop="0dp"/>
+
+
+
+
+            <!--<Button-->
+            <!--android:id="@+id/btnContactUs"-->
+            <!--style="@style/btnLink3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/contact_us"-->
+            <!--android:textAlignment="textStart"-->
+            <!--android:drawablePadding="10dp"/>-->
+
+
+            <TextView
+                android:id="@+id/lblContactUs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/avenir_next_medium"
+                android:textSize="14sp"
+                android:textColor="#222222"
+                android:text="@string/contact_us"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:padding="4dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"/>
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0.5dp"-->
+            <!--android:background="#20000000"-->
+            <!--android:layout_marginTop="0dp"/>-->
+
+
+            <TextView
+                android:id="@+id/lblHelpAdvice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenir_next_medium"
+                android:textSize="13sp"
+                android:textColor="#A4A4A4"
+                android:text="@string/help_advice_feedback"
+                android:textAllCaps="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"/>
+
+
+            <TextView
+                android:id="@+id/lblAvailable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/avenir_next_medium"
+                android:textSize="13sp"
+                android:textColor="#BDBDBD"
+                android:text="@string/available"
+                android:textAllCaps="false"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"/>
+
+
+            <Button
+                android:id="@+id/btnContactEmailUs"
+                style="@style/btnContactEmailUs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email_us"
+                android:textAlignment="center"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:id="@+id/btnLogout"
+                style="@style/btnContactEmailUs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/logout"
+                android:textAlignment="center"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#F2F2F2"
+                android:layout_marginStart="0dp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="0dp">
+
+                <TextView
+                    android:id="@+id/lblAppVersion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:textSize="11sp"
+                    android:textColor="#BDBDBD"
+                    android:text="@string/app_version"
+                    android:textAllCaps="false"
+                    android:padding="0dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/lblDesignedBy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:textSize="11sp"
+                    android:textColor="#BDBDBD"
+                    android:text="@string/designed_by"
+                    android:textAllCaps="true"
+                    android:padding="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+
+
+            <!--<Button-->
+                <!--android:id="@+id/btnAppVersion"-->
+                <!--style="@style/btnLink2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/app_version"-->
+                <!--android:textAlignment="textStart"-->
+                <!--android:drawablePadding="10dp"-->
+                <!--android:layout_marginStart="15dp"-->
+                <!--android:layout_marginEnd="15dp"/>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:background="#F2F2F2"-->
+                <!--android:layout_marginStart="0dp"/>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btnHayath"-->
+                <!--style="@style/btnContactEmailUs"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/designed_by"-->
+                <!--android:textAlignment="center"-->
+                <!--android:drawablePadding="10dp"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:layout_marginBottom="15dp"-->
+                <!--android:layout_marginStart="25dp"-->
+                <!--android:layout_marginEnd="25dp"/>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@android:color/transparent"
+                android:layout_marginStart="0dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

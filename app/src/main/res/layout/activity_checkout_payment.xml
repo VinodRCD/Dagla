@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutPaymentActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delivery_address"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="16sp"
+                    android:textColor="#222222" />
+
+                <TextView
+                    android:id="@+id/lblAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="13sp"
+                    android:textColor="#4A4A4A" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_summary"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="16sp"
+                    android:textColor="#222222" />
+
+                <ListView
+                    android:id="@+id/lvOrderSummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:divider="@null"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbars="none" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coupon_code"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="16sp"
+                    android:textColor="#222222" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <EditText
+                        android:id="@+id/txtCoupon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/btnRedeem"
+                        android:hint="@string/enter_coupon_code_here"/>
+
+                    <Button
+                        style="@style/btnRedeem"
+                        android:id="@+id/btnRedeem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/redeem"
+                        android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/payment_summary"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="16sp"
+                    android:textColor="#222222" />
+
+                <ListView
+                    android:id="@+id/lvPaymentSummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbars="none" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="@string/payment_method"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="16sp"
+                    android:textColor="#222222" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollIndicators="none">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="20dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp">
+
+                        <ImageView
+                            android:id="@+id/imgCash"
+                            android:layout_width="56dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/icon_cash"/>
+
+                        <RelativeLayout
+                            android:id="@+id/pnlCash"
+                            android:layout_width="56dp"
+                            android:layout_height="2dp"
+                            android:layout_below="@id/imgCash"
+                            android:layout_marginTop="10dp"
+                            android:background="#222222"
+                            android:visibility="gone"/>
+
+                        <ImageView
+                            android:id="@+id/imgKNET"
+                            android:layout_width="51dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/icon_knet"
+                            android:layout_toEndOf="@+id/imgCash"/>
+
+                        <RelativeLayout
+                            android:id="@+id/pnlKNET"
+                            android:layout_width="51dp"
+                            android:layout_height="2dp"
+                            android:layout_below="@id/imgKNET"
+                            android:layout_toEndOf="@+id/imgCash"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="30dp"
+                            android:background="#222222"
+                            android:visibility="gone"/>
+
+                        <ImageView
+                            android:id="@+id/imgCreditCard"
+                            android:layout_width="112dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/icon_credit_card"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toEndOf="@+id/imgKNET"/>
+
+                        <RelativeLayout
+                            android:id="@+id/pnlCreditCard"
+                            android:layout_width="112dp"
+                            android:layout_height="2dp"
+                            android:layout_below="@id/imgCreditCard"
+                            android:layout_toEndOf="@+id/imgKNET"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="30dp"
+                            android:background="#222222"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/btnSubmitOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit_order"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/avenir_next_medium"
+                    android:textAllCaps="false"
+                    android:background="@drawable/bg_1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

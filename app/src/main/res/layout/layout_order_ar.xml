@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/lblOrderID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_area"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/ge_dinar_one_medium"
+        android:textSize="11sp"
+        android:textColor="@android:color/white"
+        android:text="000000"/>
+
+    <TextView
+        android:id="@+id/lblPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/lblOrderID"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="3dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/ge_dinar_one_medium"
+        android:textSize="13sp"
+        android:textColor="#222222"
+        android:text="KWD 0.000"/>
+
+    <TextView
+        android:id="@+id/lblDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:textSize="12sp"
+        android:textColor="#222222"
+        android:text="01-Jan-2017"
+        android:textStyle="normal"
+        android:fontFamily="@font/ge_dinar_one_light"/>
+
+    <TextView
+        android:id="@+id/lblItemsCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblOrderID"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/lblStatus"
+        android:layout_marginTop="8dp"
+        android:textSize="13sp"
+        android:textColor="#222222"
+        android:text="Item Name"
+        android:textStyle="normal"
+        android:fontFamily="@font/ge_dinar_one_light"
+        android:gravity="right"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/lblStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblDate"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="12dp"
+
+        android:textSize="11sp"
+        android:textColor="#222222"
+        android:textAllCaps="true"
+        android:text="PENDING"
+        android:textStyle="bold"
+        android:fontFamily="@font/ge_dinar_one_medium"/>
+
+</RelativeLayout>

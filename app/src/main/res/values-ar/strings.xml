@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dagla</string>
+    <string name="cart">عربة التسوق</string>
+    <string name="categories">الأقسام</string>
+    <string name="search">بحث</string>
+    <string name="ok">تم</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="description">وصف</string>
+    <string name="size">مقاس</string>
+    <string name="add_to_cart">أضف لعربة التسوق</string>
+    <string name="related_items">منجات مشابه</string>
+    <string name="view_cart">"عرض عربة التسوق "</string>
+    <string name="continue_shopping">واصل التسوق</string>
+    <string name="your_shopping_bag">"عربة التسوق "</string>
+    <string name="total">المجموع</string>
+    <string name="checkout">الدفع</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="register">تسجيل</string>
+    <string name="your_cart_is_empty">عربة التسوق فارغه</string>
+    <string name="email_address">البريد الإلكتروني</string>
+    <string name="password">كلمة السر</string>
+    <string name="forgot_password">نسيت كلمة السر</string>
+    <string name="forgot_password_">نسيت كلمة السر?</string>
+    <string name="register_now">سجل معنا</string>
+    <string name="your_login_was_successful">تسجيل دخول ناجح</string>
+    <string name="terms_n_conditions">الشروط و الأحكام</string>
+    <string name="privacy_policy">سياسة الخصوصيه</string>
+    <string name="my_account">حسابي</string>
+    <string name="my_profile">حسابي</string>
+    <string name="my_orders">طلبي</string>
+    <string name="change_password">تغير كلمه السر</string>
+    <string name="logout">خروج</string>
+    <string name="contact_us">إتصل بنا</string>
+    <string name="are_you_sure_you_want_to_logout">هل انت متأكد تود الخروج ؟</string>
+    <string name="skip_intro">تخطى المقدمه</string>
+    <string name="view_more">عرض المزيد</string>
+    <string name="title_home">الرئسيه</string>
+    <string name="title_categories">الأقسام</string>
+    <string name="title_my_account">حسابي</string>
+    <string name="title_wishlist">قائمة الأمنيات</string>
+    <string name="title_cart">عربة التسوق</string>
+    <string name="sign_in_btn">دخول</string>
+    <string name="start_shopping">إبدء التسوق</string>
+    <string name="my_account_details">تفاصيل حسابي</string>
+    <string name="login_register">دخول / تسجيل</string>
+    <string name="help_information">المساعده و المعلومات</string>
+    <string name="help_advice_feedback">المساعده و ردود الفعل</string>
+    <string name="available">متواجدين ٢٤ ساعه و ٧ ايام في الاسبوع</string>
+    <string name="email_us">تواصل معنا بالبريد الإلكتروني</string>
+    <string name="payment_security">الدفع الآمن</string>
+    <string name="shipping_information">معلومات التوصيل</string>
+    <string name="returns_exchanges">الإسترجاع و التبديل</string>
+    <string name="cookie_policy">سياسة ملفات الإرتباط</string>
+    <string name="faqs">الأسئله المتكرره</string>
+    <string name="change_language">تغير اللغه</string>
+    <string name="essentials">الأساسيات</string>
+    <string name="view_wishlist">عرض قائمة الأمنيات</string>
+
+
+</resources>

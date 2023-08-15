@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.IntroductionActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vPagerImages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        />
+
+    <ImageView
+        android:id="@+id/imgOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:layout_centerInParent="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="vertical"
+        android:animateLayoutChanges="true">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabDots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:tabBackground="@drawable/intro_bg_dots"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp"
+            android:layoutDirection="ltr"/>
+
+        <!--<com.viewpagerindicator.CirclePageIndicator-->
+        <!--android:id="@+id/todaysDealsImageIndicator"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/skipBtn"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:padding="10dip"-->
+        <!--app:centered="true"-->
+        <!--app:fillColor="#666666"-->
+        <!--app:strokeColor="@android:color/transparent"-->
+        <!--app:pageColor="#cccccc"-->
+        <!--app:snap="false"-->
+        <!--app:radius="4dp"-->
+        <!--app:strokeWidth="0dp"/>-->
+
+
+
+        <!--<Button-->
+            <!--style="@style/btnSkipIntroAr"-->
+            <!--android:id="@+id/btnSkipIntro"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginStart="30dp"-->
+            <!--android:layout_marginEnd="30dp"-->
+            <!--android:layout_marginTop="0dp"-->
+            <!--android:layout_marginBottom="30dp"-->
+            <!--android:text="@string/skip_intro_ar"/>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="30dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="192dp"
+    android:id="@+id/itemLayout">
+
+    <ImageView
+        android:id="@+id/categoryImg"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/categoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/categories"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:fontFamily="@font/ge_dinar_one_light"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="0dp"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,587 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Dagla</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="cart">Cart</string>
+    <string name="categories">Categories</string>
+    <string name="search">Search</string>
+    <string name="ok">OK</string>
+    <string name="apply">Apply</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="submit">Submit</string>
+    <string name="n3w">new</string>
+    <string name="sale">sale</string>
+    <string name="items">Items</string>
+    <string name="item_details">Item Details</string>
+    <string name="sort">Sort</string>
+    <string name="sort_by">Sort by</string>
+    <string name="direction">Direction</string>
+    <string name="newest">Newest</string>
+    <string name="title">Title</string>
+    <string name="price">Price</string>
+    <string name="description">Description</string>
+    <string name="size">Size</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="related_items">Related Items</string>
+    <string name="sold_out">Sold out</string>
+    <string name="view_cart">View cart</string>
+    <string name="continue_shopping">Continue shopping</string>
+    <string name="no_products_found">No products found</string>
+    <string name="your_shopping_bag">Your shopping bag</string>
+    <string name="total">Total</string>
+    <string name="checkout">Checkout</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="delivery_address">Delivery address</string>
+    <string name="your_cart_is_empty">Your cart is empty</string>
+    <string name="name">Name</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="email_address">Email address</string>
+    <string name="password">Password</string>
+    <string name="forgot_password_">Forgot password?</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="or">or</string>
+    <string name="add_new_address">Add new address</string>
+    <string name="edit_address">Edit address</string>
+    <string name="zero_address">0 Address</string>
+    <string name="zero_orders">0 Orders</string>
+    <string name="order">Order</string>
+    <string name="orders">Orders</string>
+    <string name="search_here_">Search here ...</string>
+    <string name="dont_have_an_account">Don\'t have an account?</string>
+    <string name="express_checkout">Express checkout</string>
+    <string name="register_now">Register now</string>
+    <string name="your_login_was_successful">Your login was successful</string>
+    <string name="address">Address</string>
+    <string name="addresses">Addresses</string>
+    <string name="my_addresses">My Addresses</string>
+    <string name="payment">Payment</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="your_address_book_is_empty">Your address book is empty</string>
+    <string name="your_orders_history_is_empty">Your orders history is empty</string>
+    <string name="terms_n_conditions">Terms &amp; Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="address_name">Address name</string>
+    <string name="address_name_">Address name *</string>
+    <string name="area">Area</string>
+    <string name="area_">Area *</string>
+    <string name="block">Block</string>
+    <string name="block_">Block *</string>
+    <string name="street">Street</string>
+    <string name="street_">Street *</string>
+    <string name="avenue">Avenue (Jaddah)</string>
+    <string name="house_building">House/Building</string>
+    <string name="house_building_">House/Building *</string>
+    <string name="floor">Floor</string>
+    <string name="apartment">Apartment</string>
+    <string name="extra_details">Extra details</string>
+    <string name="add">Add</string>
+    <string name="save">Save</string>
+    <string name="delivery_date_">Delivery date:</string>
+    <string name="order_summary">Order summary</string>
+    <string name="coupon_code">Coupon code</string>
+    <string name="redeem">Redeem</string>
+    <string name="remove">Remove</string>
+    <string name="payment_summary">Payment summary</string>
+    <string name="payment_method">Payment method</string>
+    <string name="submit_order">Submit order</string>
+    <string name="order_receipt">Order Receipt</string>
+    <string name="pay">Pay</string>
+    <string name="shop_by">Shop by</string>
+    <string name="my_account">My Account</string>
+    <string name="my_profile">My Profile</string>
+    <string name="my_orders">My Orders</string>
+    <string name="change_password">Change Password</string>
+    <string name="current_password">Current password</string>
+    <string name="new_password">New password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="logout">Logout</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="language">Language</string>
+    <string name="message">Message</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+    <string name="invalid_coupon_code">Invalid coupon code</string>
+    <string name="coupon_redeemed_successfully">Coupon redeemed successfully</string>
+    <string name="enter_coupon_code_here">Enter coupon code here</string>
+    <string name="req_email_address">Please enter email address</string>
+    <string name="req_password">Please enter password</string>
+    <string name="req_name">Please enter name</string>
+    <string name="req_mobile_number">Please enter mobile number</string>
+    <string name="req_address">Please enter address name</string>
+    <string name="req_area">Please select area</string>
+    <string name="req_block">Please enter block</string>
+    <string name="req_street">Please enter street</string>
+    <string name="req_house_building">Please enter house/building</string>
+    <string name="req_current_password">Please enter current password</string>
+    <string name="req_new_password">Please enter new password</string>
+    <string name="req_confirm_password">Please confirm new password</string>
+    <string name="req_new_password_6_chars">New Password must be 6 or more characters</string>
+    <string name="req_password_6_chars">Password must be 6 or more characters</string>
+    <string name="req_new_password_do_not_match">New password and confirm password do not match</string>
+    <string name="req_to">Please enter to</string>
+    <string name="req_from">Please enter from</string>
+    <string name="req_message">Please enter message</string>
+    <string name="req_recipient_number">Please enter recipient number</string>
+    <string name="req_coupon_code">Please enter coupon code</string>
+    <string name="req_payment_method">Please select payment method</string>
+    <string name="mobile_cannot_contain_spaces">Mobile number cannot contain spaces</string>
+    <string name="email_cannot_contain_spaces">Email address cannot contain spaces</string>
+    <string name="password_cannot_contain_spaces">Password cannot contain spaces</string>
+    <string name="register_note">By registering you agree to Dagla\'s <u>Terms &amp; Conditions</u> and <u>Privacy Policy</u>.</string>
+    <string name="msg_no_internet">Internet connection not found</string>
+    <string name="msg_error">Sorry, an error has occurred</string>
+
+    <!--By registering you agree to Dagla's Terms & Conditions and Privacy Policy-->
+
+    <string name="skip_intro">Skip Intro</string>
+    <string name="view_more">View More</string>
+    <string name="title_home">Home</string>
+    <string name="title_brands">A-Z</string>
+    <string name="title_categories">Categories</string>
+    <string name="title_my_account">My Account</string>
+    <string name="title_wishlist">Wishlist</string>
+    <string name="title_cart">Cart</string>
+    <string name="sign_in_btn">Sign In</string>
+    <string name="browse_as_guest">Browse as a guest</string>
+    <string name="start_shopping">Start Shopping</string>
+    <string name="sign_sync">Sign in to sync your device and shop anytime, anywhere</string>
+    <string name="my_account_details">My Account Details</string>
+    <string name="login_register">Sign In / Register</string>
+    <string name="help_information">Help and Information</string>
+    <string name="help_advice_feedback">Help, Advice &amp; Feedback</string>
+    <string name="available">Available 24 hours a day, 7 days a week.</string>
+    <string name="email_us">Email Us</string>
+    <string name="payment_security">Payment Security</string>
+    <string name="shipping_information">Shipping Information</string>
+    <string name="returns_exchanges">Returns and Exchanges</string>
+    <string name="cookie_policy">Cookie Policy</string>
+    <string name="faqs">FAQ\'s</string>
+    <string name="privacy_settings">Privacy Settings</string>
+    <string name="change_language">Change Language</string>
+    <string name="app_version">App Version</string>
+    <string name="designed_by">Designed by Haya It Solutions</string>
+    <string name="your_wishlist__is_empty">Your Wishlist is empty</string>
+    <string name="essentials">Essentials</string>
+    <string name="view_wishlist">View Wishlist</string>
+    <string name="order_before_after">Note: Orders before 5PM will deliver same day, Orders after 5PM will deliver next day.</string>
+
+
+
+    //Arabic
+
+
+    <string name="cart_ar" translatable="false">عربة التسوق</string>
+    <string name="categories_ar" translatable="false">الأقسام</string>
+    <string name="search_ar" translatable="false">بحث</string>
+    <string name="ok_ar" translatable="false">تم</string>
+    <string name="yes_ar" translatable="false">نعم</string>
+    <string name="no_ar" translatable="false">لا</string>
+    <string name="description_ar" translatable="false">وصف</string>
+    <string name="size_ar" translatable="false">مقاس</string>
+    <string name="add_to_cart_ar" translatable="false">أضف لعربة التسوق</string>
+    <string name="related_items_ar" translatable="false">منتجات مشابهه</string>
+    <string name="view_cart_ar" translatable="false">"عرض عربة التسوق "</string>
+    <string name="continue_shopping_ar" translatable="false">واصل التسوق</string>
+    <string name="your_shopping_bag_ar" translatable="false">"عربة التسوق "</string>
+    <string name="total_ar" translatable="false" tools:ignore="ExtraTranslation">المجموع</string>
+    <string name="checkout_ar" translatable="false">الدفع</string>
+    <string name="login_ar" translatable="false">تسجيل الدخول</string>
+    <string name="register_ar" translatable="false">تسجيل</string>
+    <string name="your_cart_is_empty_ar" translatable="false">عربة التسوق فارغه</string>
+    <string name="email_address_ar" translatable="false">البريد الإلكتروني</string>
+    <string name="password_ar" translatable="false">كلمة السر</string>
+    <string name="forgot_password_ar" translatable="false">نسيت كلمة السر</string>
+    <string name="forgot_password__ar" translatable="false">نسيت كلمة السر؟</string>
+    <string name="register_now_ar" translatable="false">سجل معنا</string>
+    <string name="your_login_was_successful_ar" translatable="false">تسجيل دخول ناجح</string>
+    <string name="terms_n_conditions_ar" translatable="false">الشروط و الأحكام</string>
+    <string name="privacy_policy_ar" translatable="false">سياسة الخصوصيه</string>
+    <string name="my_account_ar" translatable="false">حسابي</string>
+    <string name="my_profile_ar" translatable="false">حسابي</string>
+    <string name="my_orders_ar" translatable="false">طلبي</string>
+    <string name="change_password_ar" translatable="false">تغير كلمه السر</string>
+    <string name="logout_ar" translatable="false">خروج</string>
+    <string name="contact_us_ar" translatable="false">إتصل بنا</string>
+    <string name="are_you_sure_you_want_to_logout_ar" translatable="false">هل انت متأكد تود الخروج ؟</string>
+    <string name="skip_intro_ar" translatable="false">تخطى المقدمه</string>
+    <string name="view_more_ar" translatable="false">عرض المزيد</string>
+    <string name="title_home_ar" translatable="false">الرئسيه</string>
+    <string name="title_categories_ar" translatable="false">الأقسام</string>
+    <string name="title_my_account_ar" translatable="false">حسابي</string>
+    <string name="title_wishlist_ar" translatable="false">قائمة الأمنيات</string>
+    <string name="title_cart_ar" translatable="false">عربة التسوق</string>
+    <string name="sign_in_btn_ar" translatable="false">دخول</string>
+    <string name="start_shopping_ar" translatable="false">إبدء التسوق</string>
+    <string name="my_account_details_ar" translatable="false">تفاصيل حسابي</string>
+    <string name="login_register_ar" translatable="false">دخول / تسجيل</string>
+    <string name="help_information_ar" translatable="false">المساعده و المعلومات</string>
+    <string name="help_advice_feedback_ar" translatable="false">المساعده و ردود الفعل</string>
+    <string name="available_ar" translatable="false">متواجدين ٢٤ ساعه و ٧ ايام في الاسبوع</string>
+    <string name="email_us_ar" translatable="false">تواصل معنا بالبريد الإلكتروني</string>
+    <string name="payment_security_ar" translatable="false">الدفع الآمن</string>
+    <string name="shipping_information_ar" translatable="false">معلومات التوصيل</string>
+    <string name="returns_exchanges_ar" translatable="false">الإسترجاع و التبديل</string>
+    <string name="cookie_policy_ar" translatable="false">سياسة ملفات الإرتباط</string>
+    <string name="faqs_ar" translatable="false">الأسئله المتكرره</string>
+    <string name="change_language_ar" translatable="false">تغير اللغه</string>
+    <string name="essentials_ar" translatable="false">الأساسيات</string>
+    <string name="view_wishlist_ar" translatable="false">عرض قائمة الأمنيات</string>
+    <string name="order_before_after_ar" translatable="false">ملاحظة: الطلبات قبل الساعة 5 مساءً سيتم توصيلها في نفس اليوم ، أما الطلبات بعد الساعة 5 مساءً فسيتم توصيلها في اليوم التالي.</string>
+
+    <string name="apply_ar" translatable="false">تطبيق</string>
+    <string name="cancel_ar" translatable="false">إلغاء</string>
+    <string name="submit_ar" translatable="false">تقديم</string>
+    <string name="n3w_ar" translatable="false">جديد</string>
+    <string name="sale_ar" translatable="false">خصومات</string>
+    <string name="items_ar" translatable="false">القطعه</string>
+    <string name="item_details_ar" translatable="false">تفاصيل القطعه</string>
+    <string name="sort_ar" translatable="false">ترتيب</string>
+    <string name="sort_by_ar" translatable="false">ترتيب حسب</string>
+    <string name="direction_ar" translatable="false">إتجاه</string>
+    <string name="newest_ar" translatable="false">الأجدد</string>
+    <string name="title_ar" translatable="false">عنواون</string>
+    <string name="price_ar" translatable="false">السعر</string>
+    <string name="sold_out_ar" translatable="false">غير متوفر</string>
+    <string name="no_products_found_ar" translatable="false">تم العثور على منج جديد</string>
+    <string name="delivery_address_ar" translatable="false">عنوان التوصيل</string>
+    <string name="name_ar" translatable="false">الأسم</string>
+    <string name="mobile_number_ar" translatable="false">رقم الموبايل</string>
+    <string name="or_ar" translatable="false">أو</string>
+    <string name="add_new_address_ar" translatable="false">أضف عنوان جديد</string>
+    <string name="edit_address_ar" translatable="false">تعديل العنوان</string>
+    <string name="zero_address_ar" translatable="false">0 العنوان</string>
+    <string name="zero_orders_ar" translatable="false">0 الطلبات</string>
+    <string name="order_ar" translatable="false">طلب</string>
+    <string name="orders_ar" translatable="false">الطلبات</string>
+    <string name="search_here__ar" translatable="false">إبحث هنا</string>
+    <string name="dont_have_an_account_ar" translatable="false">ليس لديك حساب؟</string>
+    <string name="express_checkout_ar" translatable="false">الدفع السريع</string>
+    <string name="address_ar" translatable="false">العنوان</string>
+    <string name="addresses_ar" translatable="false">عناوين</string>
+    <string name="my_addresses_ar" translatable="false">عناويني</string>
+    <string name="payment_ar" translatable="false">الدفع</string>
+    <string name="are_you_sure_ar" translatable="false">هل انت متأكد؟</string>
+    <string name="your_address_book_is_empty_ar" translatable="false">لا يوجد عنوان توصيل</string>
+    <string name="your_orders_history_is_empty_ar" translatable="false">لا يوجد طلب مسبق</string>
+    <string name="address_name_ar" translatable="false">إسم العنوان</string>
+    <string name="address_name__ar" translatable="false">إسم العنوان *</string>
+    <string name="area_ar" translatable="false">المنطقه</string>
+    <string name="area__ar" translatable="false">المنطقه *</string>
+    <string name="block_ar" translatable="false">قطعه</string>
+    <string name="block__ar" translatable="false">قطعه *</string>
+    <string name="street_ar" translatable="false">شارع</string>
+    <string name="street__ar" translatable="false">شارع *</string>
+    <string name="avenue_ar" translatable="false">جاده</string>
+    <string name="house_building_ar" translatable="false">منزل/بنايه</string>
+    <string name="house_building__ar" translatable="false">منزل/بنايه *</string>
+    <string name="floor_ar" translatable="false">دور</string>
+    <string name="apartment_ar" translatable="false">شقه</string>
+    <string name="extra_details_ar" translatable="false">تفاصيل اكثر</string>
+    <string name="add_ar" translatable="false">أضف</string>
+    <string name="save_ar" translatable="false">حفظ</string>
+    <string name="delivery_date__ar" translatable="false">تاريخ التوصيل:</string>
+    <string name="order_summary_ar" translatable="false">ملخص الطلب</string>
+    <string name="coupon_code_ar" translatable="false">رمز الكوبون</string>
+    <string name="redeem_ar" translatable="false">إستخدم</string>
+    <string name="remove_ar" translatable="false">حذف</string>
+    <string name="payment_summary_ar" translatable="false">تفاصيل الدفع</string>
+    <string name="payment_method_ar" translatable="false">طريقة الدفع</string>
+    <string name="submit_order_ar" translatable="false">إطلب</string>
+    <string name="order_receipt_ar" translatable="false">فاتورة</string>
+    <string name="pay_ar" translatable="false">إدفع</string>
+    <string name="shop_by_ar" translatable="false">تسوق حسب</string>
+    <string name="current_password_ar" translatable="false">الكلمه السريه الحاليه</string>
+    <string name="new_password_ar" translatable="false">كلمه سريه جديده</string>
+    <string name="confirm_password_ar" translatable="false">تأكيد الكلمه السريه</string>
+    <string name="language_ar" translatable="false">لغه</string>
+    <string name="message_ar" translatable="false">رساله</string>
+    <string name="invalid_coupon_code_ar" translatable="false">الكوبون غير متوفر</string>
+    <string name="coupon_redeemed_successfully_ar" translatable="false">تم إستخدام الكوبون بنجاح</string>
+    <string name="enter_coupon_code_here_ar" translatable="false">أدخل رمز الكوبون هنا</string>
+    <string name="req_email_address_ar" translatable="false">الرجاء إدخال البريد الإلكتروني</string>
+    <string name="req_password_ar" translatable="false">الرجاء إدخال كلمة السر</string>
+    <string name="req_name_ar" translatable="false">الرجاء إدخال الإسم</string>
+    <string name="req_mobile_number_ar" translatable="false">الرجاء إدخال رقم الموبايل</string>
+    <string name="req_address_ar" translatable="false">الرجاء إدخال إسم العنوان</string>
+    <string name="req_area_ar" translatable="false">الرجاء إختيار المنطقه</string>
+    <string name="req_block_ar" translatable="false">الرجاء إدخال رقم القطعه</string>
+    <string name="req_street_ar" translatable="false">الرجاء إدخال إسم أو رقم الشارع</string>
+    <string name="req_house_building_ar" translatable="false">الرجاء إدخال رقم المنزل / البنايه</string>
+    <string name="req_current_password_ar" translatable="false">الرجاء إدخال كلمة السر الحاليه</string>
+    <string name="req_new_password_ar" translatable="false">الرجاء إدخال كلمة السر الجديده</string>
+    <string name="req_confirm_password_ar" translatable="false">الرجاء تأكيد كلمة السر</string>
+    <string name="req_new_password_6_chars_ar" translatable="false">كلمة السر الجديده يجب أن تكون ٦ احرف أو أكثر</string>
+    <string name="req_password_6_chars_ar" translatable="false">كلمة السر يجب أن تكون ٦ احرف أو أكثر</string>
+    <string name="req_new_password_do_not_match_ar" translatable="false">كلمة السر و التأكيد غير متطابقين</string>
+    <string name="req_to_ar" translatable="false">الرجاء إدخال لــ</string>
+    <string name="req_from_ar" translatable="false">الرجاء إدخال من</string>
+    <string name="req_message_ar" translatable="false">الرجاء إدخال الرساله</string>
+    <string name="req_recipient_number_ar" translatable="false">الرجاء إدخال رقم الفاتوره</string>
+    <string name="req_coupon_code_ar" translatable="false">الرجاء إدخال رمز الكوبون</string>
+    <string name="req_payment_method_ar" translatable="false">الرجاء إختيار طريقة الدفع</string>
+    <string name="mobile_cannot_contain_spaces_ar" translatable="false">رقم الموبايل يجب أن لا يحتوي على مسافات</string>
+    <string name="email_cannot_contain_spaces_ar" translatable="false">البريد الإلكتروني يجب أن لا يحتوي على مسافات</string>
+    <string name="password_cannot_contain_spaces_ar" translatable="false">كلمة السر يجب أن لا تحتوي على مسافات</string>
+    <string name="register_note_ar" translatable="false">بالتسجيل، أنت توافق على شروط و و أحكام دقلة و سياسة الخصوصية</string>
+    <string name="msg_no_internet_ar" translatable="false">لا يوجد إتصال بالشبكه</string>
+    <string name="msg_error_ar" translatable="false">نأسف ، هناك خطاء</string>
+
+
+    <string name="title_brands__ar" translatable="false">A-Z</string>
+    <string name="browse_as_guest_ar" translatable="false">تصفح كزائر</string>
+    <string name="sign_sync_ar" translatable="false">سجل الدخول لمزامنة جهازك مع التطبيق لتتسوق في اي وقت أو أي زمان</string>
+    <string name="privacy_settings_ar" translatable="false">إعدادات الخصوصيه</string>
+    <string name="app_version_ar" translatable="false">إصدار التطبيق</string>
+    <string name="designed_by_ar" translatable="false">Designed by Haya It Solutions</string>
+    <string name="your_wishlist__is_empty_ar" translatable="false">ٍقائمة الأمنيات فارغه</string>
+
+    <string name="add_to_bag" translatable="false">Add To Bag</string>
+    <string name="add_to_bag_ar" translatable="false">أضف الى الحقيبة</string>
+    <string name="add_to_wishlist" translatable="false">Add to Wishlist</string>
+    <string name="add_to_wishlist_ar" translatable="false">قائمة الامنيات</string>
+    <string name="color" translatable="false">Color</string>
+    <string name="color_ar" translatable="false">اللون</string>
+
+
+    <string name="add_to_shopping_bag" translatable="false">Add to Shopping Bag</string>
+    <string name="add_to_shopping_bag_ar" translatable="false">اضافة إلى عربة التسوق</string>
+    <string name="call_us" translatable="false">Call Us</string>
+    <string name="call_us_ar" translatable="false">اتصل بنا</string>
+    <string name="view_size_guide" translatable="false">View size guide</string>
+    <string name="view_size_guide_ar" translatable="false">عرض دليل الحجم</string>
+
+
+
+    <string name="countly_hannel_name" translatable="false">General Notifications</string>
+    <string name="countly_channel_description" translatable="false"><![CDATA[News & announcements from AppMessagingFcm]]></string>
+
+    <string name="proceed_to_checkout" translatable="false">Proceed to Checkout</string>
+    <string name="proceed_to_checkout_ar" translatable="false">الدفع</string>
+    <string name="move_to_wishlist" translatable="false">Move to Wishlist</string>
+    <string name="move_to_wishlist_ar" translatable="false">إضافة الى قائمة الأمنيات</string>
+
+    <string name="delivery_charges" translatable="false">Delivery Charges</string>
+    <string name="delivery_charges_ar" translatable="false">رسوم التوصيل</string>
+    <string name="sub_total" translatable="false">Sub Total</string>
+    <string name="sub_total_ar" translatable="false">الإجمالي</string>
+    <!--<string name="items" translatable="false">Items</string>-->
+    <!--<string name="items_ar" translatable="false">القطع</string>-->
+    <string name="discount_amount" translatable="false">Discount</string>
+    <string name="discount_amount_ar" translatable="false">مقدار الخصم</string>
+
+    <string name="promo_code" translatable="false">Promo Code</string>
+    <string name="promo_code_ar" translatable="false">كود الخصم</string>
+    <string name="payment_options" translatable="false">Payment Options</string>
+    <string name="payment_options_ar" translatable="false">خيارات الدفع</string>
+    <string name="k_net" translatable="false">K-Net</string>
+    <string name="k_net_ar" translatable="false">كي - نت</string>
+    <string name="credit_card" translatable="false">Master / Visa Card</string>
+    <string name="credit_card_ar" translatable="false">بطاقة ماستر /  فيزا</string>
+
+    <string name="items_ordered" translatable="false">Items Ordered</string>
+    <string name="items_ordered_ar" translatable="false">المنتجات التي تم طلبها</string>
+    <string name="secure_payment" translatable="false">Secure Payment</string>
+    <string name="secure_payment_ar" translatable="false">شراء آمن</string>
+    <string name="change" translatable="false">Change</string>
+    <string name="change_ar" translatable="false">تغيير</string>
+
+
+    <string name="please_add_the_address" translatable="false">Please add the address</string>
+    <string name="please_add_the_address_ar" translatable="false">يرجى إضافة العنوان</string>
+
+    <string name="total_" translatable="false">Total:</string>
+    <string name="total_ar_" translatable="false">المجموع:</string>
+
+
+    <string name="my_location" translatable="false">My Location</string>
+    <string name="my_location_ar" translatable="false">My Location</string>
+    <string name="country_name" translatable="false">Kuwait</string>
+    <string name="country_name_ar" translatable="false">Kuwait</string>
+    <string name="select_country" translatable="false">Select Country</string>
+    <string name="select_country_ar" translatable="false">Select Country</string>
+
+
+    <string name="request_a_visit" translatable="false">Request a visit</string>
+    <string name="request_a_visit_ar" translatable="false">طلب زيارة</string>
+    <string name="select_slot" translatable="false">Select Slot</string>
+    <string name="select_slot_ar" translatable="false">حدد فتحة</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="next_ar" translatable="false">التالى</string>
+    <string name="my_wallet" translatable="false">My Wallet</string>
+    <string name="my_wallet_ar" translatable="false">محفظتي</string>
+
+    <string name="title_visit_us" translatable="false">Visit Us</string>
+    <string name="title_visit_us_ar" translatable="false">زورنا</string>
+    <string name="change_country" translatable="false">Change Country</string>
+    <string name="change_country_ar" translatable="false">تغيير الدولة</string>
+
+
+    <string name="request_a_dishdasha" translatable="false">Request a Dishdasha</string>
+    <string name="request_a_dishdasha_ar" translatable="false">طلب موعد زيارة المنزل لأخذ قياسات الدشداشة</string>
+    <string name="new_customer" translatable="false">New Customer</string>
+    <string name="new_customer_ar" translatable="false">عميل حالي</string>
+    <string name="existing_customer" translatable="false">Existing Customer</string>
+    <string name="existing_customer_ar" translatable="false">عميل جديد</string>
+    <string name="branch" translatable="false">Branch</string>
+    <string name="branch_ar" translatable="false">فرع شجرة</string>
+    <string name="please_select_branch" translatable="false">Please select branch</string>
+    <string name="please_select_branch_ar" translatable="false">Please select branch</string>
+
+    <string name="new_customer_text" translatable="false">You are our new customer , our team will contact you and they will try their best to reach at your provided location to get your correct measurement.</string>
+    <string name="existing_customer_text" translatable="false">We have your measurement and our team will contact you. they will explain you about our Deshdasha in detail so there won’t be any mistake with your order.</string>
+
+    <string name="new_customer_text_ar" translatable="false">بما أنك عميل جديد لدينا، سيتواصل فريقنا معك، وسيبذل قصارى جهده للوصول إلى مكانك المحدد للحصول على المقاس الصحيح الذي يناسبك.</string>
+    <string name="existing_customer_text_ar" translatable="false">لقد حصلنا على المقاس الخاص بك، وسيتولى فريقنا التواصل معك، حيث سيوضح لك بالتفصيل ما هي الدشداشة حتى لا يحدث أي خطأ يتعلق بطلبك.</string>
+
+    <string name="you_will_charge" translatable="false">You will be charged 15 kd and it will be deducted from your final invoice.</string>
+    <string name="you_will_charge_ar" translatable="false">سيتم تحصيل 15 د.ك وسيتم خصمها من فاتورتك النهائية.</string>
+
+
+    <string name="home_visit_service" translatable="false">Home Visit Service</string>
+    <string name="home_visit_service_ar" translatable="false">Home Visit Service</string>
+
+    <string name="i_agree" translatable="false">I Agree</string>
+    <string name="i_agree_ar" translatable="false">أنا موافق</string>
+
+
+    <string name="agree_terms_conditions" translatable="false">Please select I Agree Terms &amp; Conditions</string>
+    <string name="agree_terms_conditions_ar" translatable="false">الرجاء تحديد أوافق على الشروط والأحكام</string>
+
+
+    <string name="returns" translatable="false">Returns</string>
+    <string name="exchange" translatable="false">Exchange</string>
+    <string name="exchanged" translatable="false">Exchanged</string>
+    <string name="please_specify_your_reason_for_product_returns_" translatable="false">Please specify your reason for product returns:</string>
+    <string name="refund_to_" translatable="false">Refund to:</string>
+    <string name="bank_account" translatable="false">Bank Account</string>
+    <string name="are_you_sure_you_want_to_return_" translatable="false">Are you sure you want to return?</string>
+    <string name="bank_name" translatable="false">Bank Name</string>
+    <string name="account_number" translatable="false">Account Number</string>
+    <string name="iban_number" translatable="false">IBAN Number</string>
+    <string name="account_holder_name" translatable="false">Account Holder Name</string>
+    <string name="refund_in_process" translatable="false">Refund in process</string>
+    <string name="refunded" translatable="false">Refunded</string>
+    <string name="exchange_with_" translatable="false">Exchange with:</string>
+    <string name="are_you_sure_you_want_to_exchange_" translatable="false">Are you sure you want to exchange?</string>
+    <string name="please_enter_bank_name" translatable="false">Please enter bank name</string>
+    <string name="please_enter_account_number" translatable="false">Please enter account number</string>
+    <string name="please_enter_iban_number" translatable="false">Please enter iban number</string>
+    <string name="please_enter_account_holder_name" translatable="false">Please enter account holder name</string>
+    <string name="please_select_the_size" translatable="false">Please select the size</string>
+    <string name="please_select_the_color" translatable="false">Please select the color</string>
+    <string name="no_sizes_found" translatable="false">No sizes found</string>
+    <string name="no_colors_found" translatable="false">No colors found</string>
+    <string name="please_select_the_size_or_color" translatable="false">Please select the size or color</string>
+    <string name="my_returns" translatable="false">My Returns</string>
+    <string name="wallet" translatable="false">Wallet</string>
+    <string name="debit_credit_card" translatable="false">Debit Cards &amp; Credit cards</string>
+
+    <string name="returns_ar" translatable="false">عائدات</string>
+    <string name="exchange_ar" translatable="false">تبادل</string>
+    <string name="exchanged_ar" translatable="false">متبادلة</string>
+    <string name="please_specify_your_reason_for_product_returns_ar_" translatable="false">الرجاء تحديد سبب إرجاع المنتج:</string>
+    <string name="refund_to_ar_" translatable="false">رد الأموال إلى:</string>
+    <string name="bank_account_ar" translatable="false">حساب البنك</string>
+    <string name="are_you_sure_you_want_to_return_ar_" translatable="false">هل أنت متأكد أنك تريد العودة؟</string>
+    <string name="bank_name_ar" translatable="false">اسم البنك</string>
+    <string name="account_number_ar" translatable="false">رقم حساب</string>
+    <string name="iban_number_ar" translatable="false">رقم الآيبان</string>
+    <string name="account_holder_name_ar" translatable="false">اسم صاحب الحساب</string>
+    <string name="refund_in_process_ar" translatable="false">استرداد قيد المعالجة</string>
+    <string name="refunded_ar" translatable="false">معاد</string>
+    <string name="exchange_with_ar_" translatable="false">تبادل مع:</string>
+    <string name="are_you_sure_you_want_to_exchange_ar_" translatable="false">هل أنت متأكد أنك تريد التبادل؟</string>
+    <string name="please_enter_bank_name_ar" translatable="false">الرجاء إدخال اسم البنك</string>
+    <string name="please_enter_account_number_ar" translatable="false">الرجاء إدخال رقم الحساب</string>
+    <string name="please_enter_iban_number_ar" translatable="false">الرجاء إدخال رقم الآيبان</string>
+    <string name="please_enter_account_holder_name_ar" translatable="false">الرجاء إدخال اسم صاحب الحساب</string>
+    <string name="please_select_the_size_ar" translatable="false">الرجاء تحديد الحجم</string>
+    <string name="please_select_the_color_ar" translatable="false">الرجاء اختيار اللون</string>
+    <string name="no_sizes_found_ar" translatable="false">لم يتم العثور على أحجام</string>
+    <string name="no_colors_found_ar" translatable="false">لم يتم العثور على ألوان</string>
+    <string name="please_select_the_size_or_color_ar" translatable="false">الرجاء تحديد الحجم أو اللون</string>
+    <string name="my_returns_ar" translatable="false">عوائدي</string>
+    <string name="wallet_ar" translatable="false">محفظة</string>
+    <string name="debit_credit_card_ar" translatable="false">البطاقه الائتمانية المحليه</string>
+
+    <string name="related_colors" translatable="false">Related Colors</string>
+    <string name="related_colors_ar" translatable="false">الألوان ذات الصلة</string>
+
+<!--    Request a Dishdasha-->
+<!--    New Customer-->
+<!--    Existing Customer-->
+<!--    Branch-->
+<!--    Please select branch-->
+<!--    You will be charged 15 kd and it will be deducted from your final invoice-->
+
+    <string name="tailoring" translatable="false">Tailoring</string>
+    <string name="book_a_home_visit" translatable="false">Book a home visit</string>
+    <string name="track_your_dishdasha" translatable="false">Track your dishdasha</string>
+    <string name="order_tracking" translatable="false">Order Tracking</string>
+    <string name="enter_order_no" translatable="false">Enter order no</string>
+    <string name="cutting_department" translatable="false">Cutting Department</string>
+    <string name="tailoring_department" translatable="false">Tailoring Department</string>
+    <string name="quality_control" translatable="false">Quality Control</string>
+    <string name="finishing" translatable="false">Finishing</string>
+    <string name="being_dispatched" translatable="false">Being Dispatched</string>
+    <string name="ready_for_pickup_delivery" translatable="false">Ready for Pickup/Delivery</string>
+    <string name="order_number" translatable="false">Order Number</string>
+    <string name="ordered_on" translatable="false">Ordered On</string>
+    <string name="order_status" translatable="false">Order Status</string>
+    <string name="track" translatable="false">Track</string>
+    <string name="please_enter_order_number" translatable="false">Please enter order number</string>
+    <string name="no_orders_found" translatable="false">No orders found</string>
+    <string name="quality_control_finishing" translatable="false">Quality Control/Finishing</string>
+    <string name="delivered" translatable="false">Delivered</string>
+    <string name="enter_invoice_number" translatable="false">Enter invoice number</string>
+
+    <string name="tailoring_ar" translatable="false">الخياطة</string>
+    <string name="book_a_home_visit_ar" translatable="false">حجز زيارة منزلية</string>
+    <string name="track_your_dishdasha_ar" translatable="false">تتبع دشداشتك</string>
+    <string name="order_tracking_ar" translatable="false">تتبع الطلب</string>
+    <string name="enter_order_no_ar" translatable="false">أدخل رقم طلبك</string>
+    <string name="cutting_department_ar" translatable="false">قسم القص</string>
+    <string name="tailoring_department_ar" translatable="false">قسم الخياطة</string>
+    <string name="quality_control_ar" translatable="false">Quality Control</string>
+    <string name="finishing_ar" translatable="false">Finishing</string>
+    <string name="being_dispatched_ar" translatable="false">تغليف الطلب</string>
+    <string name="ready_for_pickup_delivery_ar" translatable="false">جاهز للإستلام/توصيلy</string>
+    <string name="order_number_ar" translatable="false">رقم الطلب</string>
+    <string name="ordered_on_ar" translatable="false">تاريخ الطلب</string>
+    <string name="order_status_ar" translatable="false">حالة الطلب</string>
+    <string name="track_ar" translatable="false">تتبع</string>
+    <string name="please_enter_order_number_ar" translatable="false">الرجاء إدخال رقم الطلب</string>
+    <string name="no_orders_found_ar" translatable="false">لم يتم العثور على أية طلبات</string>
+    <string name="quality_control_finishing_ar" translatable="false">فحص الجودة</string>
+    <string name="delivered_ar" translatable="false">تم التوصيل</string>
+    <string name="enter_invoice_number_ar" translatable="false">ادخل رقم الفاتورة</string>
+    <string name="please_note_that_the_service_is_currently_unavailable" translatable="false">Please note that the service is currently unavailable</string>
+    <string name="please_note_that_the_service_is_currently_unavailable_ar" translatable="false">يرجى العلم بأن الخدمة غير متوفرة حاليا</string>
+
+
+
+
+
+    <string name="shop" translatable="false">Shop</string>
+    <string name="skip" translatable="false">Skip</string>
+    <string name="filter" translatable="false">Filter</string>
+    <string name="men" translatable="false">Men</string>
+    <string name="women" translatable="false">Women</string>
+    <string name="junior" translatable="false">Junior</string>
+    <string name="in_stock" translatable="false">In Stock</string>
+
+
+    <string name="shop_ar" translatable="false">محل</string>
+    <string name="skip_ar" translatable="false">Skip</string>
+    <string name="filter_ar" translatable="false">Filter</string>
+    <string name="men_ar" translatable="false">رجال</string>
+    <string name="women_ar" translatable="false">النساء</string>
+    <string name="junior_ar" translatable="false">مبتدئ</string>
+    <string name="in_stock_ar" translatable="false">متوفر</string>
+
+
+    <string name="about_us" translatable="false">About Us</string>
+    <string name="about_us_ar" translatable="false">معلومات عنا</string>
+</resources>

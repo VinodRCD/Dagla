@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/imgBanner1Layout"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <ImageView
+                    android:id="@+id/imgBanner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="380dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"/>
+
+                <ProgressBar
+                    android:id="@+id/progress1"
+                    style="@style/Base.Widget.AppCompat.ProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="true" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/lblTitle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="What's New"
+                android:textColor="#222222"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/avenir_next_medium"
+                android:textAllCaps="false"
+                android:layout_margin="15dp"/>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vPagerImages1"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_gravity="center"/>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabDots1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                app:tabBackground="@drawable/intro_bg_dots"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp"
+                android:layoutDirection="ltr"/>
+
+            <Button
+                android:id="@+id/btnViewMore1"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/btn_skip_intro"
+                android:text="@string/view_more"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:fontFamily="@font/avenir_next_medium"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/lblViewMore1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/view_more"
+                android:textColor="#222222"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:fontFamily="@font/avenir_next_medium"
+                android:textAllCaps="false"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"/>
+
+
+            <RelativeLayout
+                android:id="@+id/imgBanner2Layout"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <ImageView
+                    android:id="@+id/imgBanner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"/>
+
+<!--                <ProgressBar-->
+<!--                    android:id="@+id/progress2"-->
+<!--                    style="?android:attr/progressBarStyleSmall"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:visibility="visible"/>-->
+
+
+                <ProgressBar
+                    android:id="@+id/progress2"
+                    style="@style/Base.Widget.AppCompat.ProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="true" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/lblTitle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Best Seller"
+                android:textColor="#222222"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/avenir_next_medium"
+                android:layout_margin="15dp"
+                android:textAllCaps="false"/>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vPagerImages2"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_gravity="center"/>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabDots2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                app:tabBackground="@drawable/intro_bg_dots"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp"
+                android:layoutDirection="ltr"/>
+
+            <Button
+                android:id="@+id/btnViewMore2"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/btn_skip_intro"
+                android:text="@string/view_more"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:fontFamily="@font/avenir_next_medium"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/lblViewMore2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/view_more"
+                android:textColor="#222222"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:fontFamily="@font/avenir_next_medium"
+                android:textAllCaps="false"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"/>
+
+            <RelativeLayout
+                android:id="@+id/imgBanner3Layout"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <ImageView
+                    android:id="@+id/imgBanner3"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"/>
+
+                <ProgressBar
+                    android:id="@+id/progress3"
+                    style="@style/Base.Widget.AppCompat.ProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="true" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/lblTitle3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Editorial Choice"
+                android:textColor="#222222"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/avenir_next_medium"
+                android:textAllCaps="false"
+                android:layout_margin="15dp"/>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vPagerImages3"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_gravity="center"/>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabDots3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                app:tabBackground="@drawable/intro_bg_dots"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp"
+                android:layoutDirection="ltr"/>
+
+            <Button
+                android:id="@+id/btnViewMore3"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/btn_skip_intro"
+                android:text="@string/view_more"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:fontFamily="@font/avenir_next_medium"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/lblViewMore3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/view_more"
+                android:textColor="#222222"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:fontFamily="@font/avenir_next_medium"
+                android:textAllCaps="false"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"/>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="0dp"/>
+
+            <RelativeLayout
+                android:id="@+id/imgBanner4Layout"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imgBanner4"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"/>
+
+                <ProgressBar
+                    android:id="@+id/progress4"
+                    style="@style/Base.Widget.AppCompat.ProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="true" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="0dp"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/imgBanner5Layout"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imgBanner5"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"/>
+
+                <ProgressBar
+                    android:id="@+id/progress5"
+                    style="@style/Base.Widget.AppCompat.ProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="true" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#F2F2F2"
+                android:layout_marginTop="0dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

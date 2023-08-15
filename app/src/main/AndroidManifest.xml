@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dagla.android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />-->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+
+    <!--<permission-->
+        <!--android:name="com.dagla.android.permission.C2D_MESSAGE"-->
+        <!--android:protectionLevel="signature" />-->
+
+    <!--<uses-permission android:name="com.dagla.android.permission.C2D_MESSAGE" />-->
+
+
+    <!--android:icon="@mipmap/app_icon_mar_2023"-->
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/daglaappicon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/daglaappicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:resizeableActivity="false"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="n"
+        android:exported="false"
+        android:dataExtractionRules="@xml/data_extraction_rules">
+
+
+
+        <service
+            android:name=".activity.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+
+        </service>
+
+<!--        <service android:name=".activity.FirebaseIDService">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+
+
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+
+
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashAppTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".activity.IntroductionActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"/>
+
+
+        <!--<activity-->
+            <!--android:name=".MainActivity"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/AppTheme.NoActionBar">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+
+
+        <activity
+            android:name=".activity.StartingActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            tools:ignore="AppLinkUrlError">
+
+        <intent-filter android:label="@string/app_name">
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <!-- Accepts URIs that begin with "countly://test” -->
+            <!-- test with adb shell am start -a android.intent.action.VIEW -d "countly://test" ly.count.android.demo  -->
+            <data android:scheme="countly"
+                android:host="dagla" />
+
+        </intent-filter>
+
+            </activity>
+
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize" />
+
+        <activity
+            android:name=".activity.ForgotPasswordActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize" />
+
+        <activity
+            android:name=".activity.WebActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize" />
+
+
+        <activity
+            android:name=".ItemsActivity"
+            android:label="@string/items"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ItemDetailsActivity"
+            android:label="@string/item_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CartActivity"
+            android:label="@string/cart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CheckoutDeliveryActivity"
+            android:label="@string/delivery_address"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:label="@string/forgot_password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ExpressCheckoutActivity"
+            android:label="@string/express_checkout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddAddressActivity"
+            android:label="@string/add_new_address"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CheckoutPaymentActivity"
+            android:label="@string/payment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyAddressesActivity"
+            android:label="@string/my_addresses"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PayActivity"
+            android:label="@string/pay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyProfileActivity"
+            android:label="@string/my_profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyOrdersActivity"
+            android:label="@string/my_orders"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:label="@string/change_password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ContactUsActivity"
+            android:label="@string/contact_us"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderReceiptActivity"
+            android:label="@string/order_receipt"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WebActivity"
+            android:screenOrientation="portrait" />
+
+<!--        <service android:name=".activity.DemoFirebaseMessagingService">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.google.firebase.MESSAGING_EVENT" />-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+
+<!--        <service android:name="org.openudid.OpenUDID_service">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="org.openudid.GETUDID" />-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+
+
+        <activity
+            android:name="activity.AnotherActivity"
+            android:label="Another Activity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme"
+            tools:ignore="MissingClass">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".activity.IntroductionActivity2"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity
+            android:name=".activity.LandingActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"/>
+
+
+    </application>
+
+</manifest>
