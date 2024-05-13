@@ -42,9 +42,9 @@ public class StartingActivity extends AppCompatActivity implements View.OnClickL
 
     Activity act;
 
-    TextView lblGuest,lblStartTitle,lblDesc;
+    TextView lblStartTitle,lblDesc;
 
-    Button btnSignIn,btnRegister;
+    Button lblGuest,btnSignIn,btnRegister;
 
     ImageView signInImg;
 
@@ -85,7 +85,7 @@ public class StartingActivity extends AppCompatActivity implements View.OnClickL
         btnSignIn = (Button) findViewById(R.id.btnSignIn);
         btnRegister = (Button) findViewById(R.id.btnRegister);
 
-        lblGuest = (TextView) findViewById(R.id.lblGuest);
+        lblGuest = (Button) findViewById(R.id.lblGuest);
         lblStartTitle = (TextView) findViewById(R.id.lblStartTitle);
         lblDesc = (TextView) findViewById(R.id.lblDesc);
 

@@ -10,13 +10,13 @@ android {
             keyPassword '123456'
         }
     }
-    compileSdkVersion 32
+    compileSdkVersion 33
     defaultConfig {
         applicationId "com.dagla.android"
         minSdkVersion 21
-        targetSdkVersion 32
-        versionCode 45
-        versionName "7.2.13"
+        targetSdkVersion 33
+        versionCode 48
+        versionName "8.2.15"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -40,7 +40,13 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.0'
     implementation 'com.loopj.android:android-async-http:1.4.9'
+
+
     implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+   // implementation 'com.github.nostra13:Android-Universal-Image-Loader:f6a9615868482672c3630cb7db6dcf43391e80de'
+
+
+
     implementation 'com.squareup.picasso:picasso:2.3.2'
     implementation 'com.google.firebase:firebase-core:16.0.4'
     implementation 'com.google.firebase:firebase-messaging:19.0.1'

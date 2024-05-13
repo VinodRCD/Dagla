@@ -126,6 +126,8 @@ public class AddAddressActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+
+
                 addUpdateAddress();
             }
         });
@@ -272,6 +274,8 @@ public class AddAddressActivity extends AppCompatActivity {
 
         if (GlobalFunctions.hasConnection(act)) {
 
+
+
             showLoading();
 
             String serviceName = "addAddress";
@@ -287,6 +291,8 @@ public class AddAddressActivity extends AppCompatActivity {
                 params.put("addressId", addressId);
             }
 
+
+
             params.put("userId", GlobalFunctions.getPrefrences(act, "user_id"));
             params.put("areaId", areaId);
             params.put("addressName", txtAddressName.getText().toString().trim());
@@ -298,6 +304,8 @@ public class AddAddressActivity extends AppCompatActivity {
             params.put("apartmentNumber", txtApartment.getText().toString().trim());
             params.put("extraDetails", txtExtraDetails.getText().toString().trim());
             params.put("ran", GlobalFunctions.getRandom());
+
+            Log.e("serviceURL",""+ GlobalFunctions.serviceURL);
 
             client.post(GlobalFunctions.serviceURL + serviceName, params, new AsyncHttpResponseHandler() {
 
@@ -359,7 +367,8 @@ public class AddAddressActivity extends AppCompatActivity {
                 }
             });
 
-        } else {
+        }
+        else {
 
             GlobalFunctions.showToastError(act, getString(R.string.msg_no_internet));
 

@@ -53,8 +53,10 @@ public class GlobalFunctions {
     public static String baseURL = "http://portal.dagla.com/";
     //public static String baseURL = "http://10.211.55.3/dagla/";
 
-    public static String serviceURL = baseURL + "services/ajax_v1.aspx?app=ios&lang=en&ver="+ appVersion + "&cat=";
-//    public static String serviceURL = baseURL + "services/ajax_v2.aspx?app=android&lang=en&ver="+ appVersion + "&cat=";
+    public static String serviceURL1 = baseURL + "services/ajax_v2.aspx?app=android&lang=en&curr=KWD&ver="+ appVersion + "&cat=";
+
+    public static String serviceURL = baseURL + "services/ajax_v1.aspx?app=android&lang=en&ver="+ appVersion + "&cat=";
+   // public static String serviceURL = baseURL + "services/ajax_v2.aspx?app=android&lang=en&ver="+ appVersion + "&cat=";
 //    public static String serviceURL = "https://portal.dagla.com/Staging/services/ajax_v2.aspx?app=android&lang=en&ver="+ appVersion + "&cat=";
     public static String cartIds = "";
 

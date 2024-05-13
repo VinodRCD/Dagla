@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.LandingActivity"
-    android:background="@color/white_color">
+    android:background="@color/text_color">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -30,12 +30,12 @@
                 android:layout_height="40dp"
                 android:text="@string/shop_ar"
                 android:textSize="16sp"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/text_color"
                 android:textAllCaps="false"
                 android:textStyle="bold"
                 android:fontFamily="@font/ge_dinar_one_medium"
                 android:visibility="visible"
-                android:background="@drawable/btn_1_bg"
+                android:background="@drawable/white_bg"
                 android:layout_gravity="center_horizontal"/>
 
 
@@ -45,11 +45,11 @@
                 android:layout_height="40dp"
                 android:text="@string/tailoring_ar"
                 android:textSize="16sp"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/text_color"
                 android:textAllCaps="false"
                 android:textStyle="bold"
                 android:fontFamily="@font/ge_dinar_one_medium"
-                android:background="@drawable/btn_1_bg"
+                android:background="@drawable/white_bg"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="30dp"
                 android:visibility="visible"/>

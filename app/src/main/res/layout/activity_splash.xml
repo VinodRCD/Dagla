@@ -10,5 +10,5 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:background="@android:color/transparent" />
+        android:background="@drawable/splash2" />
 </RelativeLayout>

@@ -65,7 +65,7 @@ public class SplashActivity extends AppCompatActivity {
                     WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         }
 
-        GlobalFunctions.setLanguage(this);
+
 
         setContentView(R.layout.activity_splash);
 
@@ -111,7 +111,7 @@ public class SplashActivity extends AppCompatActivity {
         ImageView imageView = (ImageView) findViewById(R.id.imageView);
 
         Glide.with(this)
-                .load(R.drawable.splash_screen_05_mar_2023)
+                .load(R.drawable.splash2)
 //                .placeholder(R.drawable.place_holder)
                 .listener(new RequestListener<Drawable>() {
                     @Override

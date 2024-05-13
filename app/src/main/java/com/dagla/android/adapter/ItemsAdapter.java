@@ -1,6 +1,8 @@
 package com.dagla.android.adapter;
 
 import android.app.Activity;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.util.Log;
@@ -23,6 +25,8 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 
 public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.MyViewHolder> {
@@ -134,6 +138,8 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.MyViewHolder
             holder.imgPic.setImageDrawable(null);
 
             String pic = obj.getString("pic");
+
+            Log.e("pic",""+pic);
 
             if (!pic.equalsIgnoreCase("")) {
 

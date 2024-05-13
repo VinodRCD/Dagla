@@ -322,6 +322,7 @@ public class MyAddressesActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
+        super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == ADD_ADDRESS_REQUEST) {
 
             if (resultCode == RESULT_OK) {

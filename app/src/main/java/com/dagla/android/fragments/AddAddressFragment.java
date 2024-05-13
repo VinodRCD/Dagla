@@ -144,7 +144,7 @@ public class AddAddressFragment extends Fragment {
             btnAdd.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-
+                    Log.e("up","55");
                     addUpdateAddress();
                 }
             });
@@ -214,6 +214,8 @@ public class AddAddressFragment extends Fragment {
                             }
                             //
                             arrAdapter = new AreasAdapter(getActivity(), arrList);
+
+
 
                             if (!addressId.equalsIgnoreCase("")) {
 
@@ -352,6 +354,7 @@ public class AddAddressFragment extends Fragment {
                 params.put("addressId", addressId);
             }
 
+
             params.put("userId", GlobalFunctions.getPrefrences(getActivity(), "user_id"));
             params.put("areaId", areaId);
             params.put("addressName", txtAddressName.getText().toString().trim());
@@ -364,6 +367,8 @@ public class AddAddressFragment extends Fragment {
             params.put("extraDetails", txtExtraDetails.getText().toString().trim());
             params.put("ran", GlobalFunctions.getRandom());
 
+            Log.e("params",""+ params);
+            Log.e("yy",""+ GlobalFunctions.serviceURL + serviceName+"   "+ params);
             client.post(GlobalFunctions.serviceURL + serviceName, params, new AsyncHttpResponseHandler() {
 
                 @Override
@@ -373,7 +378,7 @@ public class AddAddressFragment extends Fragment {
 
                     String response = new String(bytes);
 
-                    Log.d("onSuccess", response);
+                    Log.e("onSuccess", response);
 
                     JSONObject obj;
 

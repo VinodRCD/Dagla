@@ -253,7 +253,13 @@ public class RegisterActivity extends AppCompatActivity {
             params.put("androidToken", GlobalFunctions.getPrefrences(act, "token"));
             params.put("ran", GlobalFunctions.getRandom());
 
+            Log.e("param","" +params.toString());
+
+            Log.e("url","" +GlobalFunctions.serviceURL + "registerUser");
+
             client.post(GlobalFunctions.serviceURL + "registerUser", params, new AsyncHttpResponseHandler() {
+
+
 
                 @Override
                 public void onSuccess(int statusCode, Header[] headers, byte[] bytes) {
@@ -318,7 +324,8 @@ public class RegisterActivity extends AppCompatActivity {
                 }
             });
 
-        } else {
+        }
+        else {
 
             if (GlobalFunctions.getLang(act).equals("ar")) {
                 GlobalFunctions.showToastError(act, getString(R.string.msg_no_internet_ar));

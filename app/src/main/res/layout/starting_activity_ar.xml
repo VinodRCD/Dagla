@@ -44,6 +44,7 @@
 
 
         <TextView
+            android:visibility="gone"
             android:id="@+id/lblStartTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -55,6 +56,7 @@
             android:fontFamily="@font/ge_dinar_one_medium"/>
 
         <TextView
+            android:visibility="gone"
             android:id="@+id/lblDesc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -79,12 +81,12 @@
             android:layout_marginTop="0dp"
             android:layout_marginBottom="10dp"
             android:text="@string/sign_in_btn_ar"
-            android:textColor="#FFFFFF"
+            android:textColor="#222222"
             android:textSize="14sp"
             android:textStyle="normal"
             android:fontFamily="@font/ge_dinar_one_medium"
             android:textAllCaps="false"
-            android:background="@drawable/bg_1"/>
+            android:background="@drawable/white_bg"/>
 
 
         <Button
@@ -95,16 +97,32 @@
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginTop="0dp"
-            android:layout_marginBottom="0dp"
+            android:layout_marginBottom="10dp"
             android:text="@string/register_ar"
             android:textColor="#222222"
             android:textSize="14sp"
             android:textStyle="normal"
             android:fontFamily="@font/ge_dinar_one_medium"
             android:textAllCaps="false"
-            android:background="@drawable/bg_2"/>
+            android:background="@drawable/white_bg"/>
 
-        <TextView
+        <Button
+            android:id="@+id/lblGuest"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/browse_as_guest_ar"
+            android:textColor="#222222"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/ge_dinar_one_medium"
+            android:textAllCaps="false"
+            android:background="@drawable/white_bg"/>
+
+       <!-- <TextView
             android:id="@+id/lblGuest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -115,7 +133,7 @@
             android:textSize="14sp"
             android:textAllCaps="false"
             android:textStyle="bold"
-            android:fontFamily="@font/ge_dinar_one_medium"/>
+            android:fontFamily="@font/ge_dinar_one_medium"/>-->
 
     </LinearLayout>
 
