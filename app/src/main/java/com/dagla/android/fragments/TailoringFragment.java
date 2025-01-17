@@ -90,7 +90,7 @@ public class TailoringFragment extends Fragment {
             btnOrderTracking = rootView.findViewById(R.id.btnOrderTracking);
 
 
-            btnHomeVisit.setVisibility(View.VISIBLE);
+            btnHomeVisit.setVisibility(View.GONE);
             btnOrderTracking.setVisibility(View.VISIBLE);
 
             btnHomeVisit.setOnClickListener(new View.OnClickListener() {
